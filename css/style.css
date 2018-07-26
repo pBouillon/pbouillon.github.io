@@ -14,7 +14,7 @@
 
       background-image: url("https://source.unsplash.com/3Kv48NS4WUU");
 
-      filter: blur(0px) brightness(100%)
+      filter: /* blur(1px) */ brightness(80%)
 }
 
 /* main configuration
@@ -42,13 +42,13 @@ main {
 
 /* content
 ------------------------------------ */
-main > .title {
+main  .title {
     font-weight: 500;
-    font-size: 56px
+    font-size: 4em
 }
 
-main > .description {
-    font-size: 18px
+main .description {
+    font-size: 1.5em
 }
 
 /* icons
