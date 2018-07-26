@@ -12,9 +12,9 @@
       background-repeat: no-repeat;
       background-size: cover;
 
-      background-image: url('../resources/background.jpeg');
+      background-image: url("https://source.unsplash.com/3Kv48NS4WUU");
 
-      filter: blur(1px) brightness(65%)
+      filter: blur(0px) brightness(100%)
 }
 
 /* main configuration
