@@ -12,8 +12,8 @@
     },
     "competences": {
         "languages": {
-            "favorites": ["Python 3.X", "Java", "C"],
-            "known": ["C#", "C++", "HTLM/CSS", "JavaScript", "SQL", "PHP", "TypeScript"],
+            "favorites": ["Python 3.X", "Java", "C", "C#"],
+            "known": ["C++", "HTMLLM/CSS", "JavaScript", "SQL", "PHP", "TypeScript"],
             "explored": ["Go", "LOLCODE", "Brainfuck"]
         },
         "technologies": {
