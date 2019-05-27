@@ -13,7 +13,7 @@
     "competences": {
         "languages": {
             "favorites": ["Python 3.X", "Java", "C", "C#"],
-            "known": ["C++", "HTMLLM/CSS", "JavaScript", "SQL", "PHP", "TypeScript"],
+            "known": ["C++", "HTMLLM/CSS", "JavaScript", "Scala", "SQL", "PHP", "TypeScript"],
             "explored": ["Go", "LOLCODE", "Brainfuck"]
         },
         "technologies": {
@@ -21,7 +21,7 @@
             "Java": ["Spark", "Vert.x", "Maven", "FX", "Spring"],
             "C#": ["Xunit", "Moq"],
             "web": ["Angular 2+", "Bootstrap"],
-            "Versionning": ["Git", "GitHub", "Gitlab"]
+            "Versionning": ["Git", "GitHub", "GitLab"]
         },
         "tools": {
             "IDE": ["IntelliJ suite", "Visual Studio 2017"],
@@ -68,7 +68,7 @@
         {
             "school": "Faculté des Sciences et Technologies",
             "location": "Nancy",
-            "degree": "licence informatique",
+            "degree": "licence informatique (with mention)",
             "duration": "September 2017 - June 2018"
         },
         {
@@ -92,7 +92,7 @@
             "events": ["ubuntu party"]
         },
         {
-            "organization": "Recontres mondiales du logiciel libre",
+            "organization": "Rencontres mondiales du logiciel libre",
             "role": "logistic",
             "date": "2014",
             "events": ["RMLL"]
