@@ -1,0 +1,129 @@
+{
+    "meta": {
+        "name": "Pierre Bouillon",
+        "title": "Team Lead",
+        "location": "France",
+        "contact": {
+            "in": "https://www.linkedin.com/in/pierre-bouillon/",
+            "mail": "pro.pierre.bouillon@protonmail.com",
+            "site": "https://pbouillon.github.io/",
+            "tel": "(+33) 7 87 72 10 42"
+        }
+    },
+    "competences": {
+        "languages": {
+            "favorites": ["Python 3.X", "Java", "C", "C#"],
+            "known": ["C++", "HTML/CSS", "JavaScript", "Scala", "SQL", "PHP", "TypeScript"],
+            "explored": ["Go", "LOLCODE", "Brainfuck"]
+        },
+        "technologies": {
+            "Python": ["Flask", "MQTT", "Requests"],
+            "Java": ["Spark", "Vert.x", "Maven", "FX", "Spring"],
+            "C#": ["Xunit", "Moq"],
+            "web": ["Angular 2+", "Bootstrap"],
+            "Versioning": ["Git", "GitHub", "GitLab"]
+        },
+        "tools": {
+            "IDE": ["IntelliJ suite", "Visual Studio 2017"],
+            "text editors": ["Atom", "Nano", "Sublime Text 3", "VSCode"]
+        }
+    },
+    "experiences": [
+        {
+            "company": "Docapost Applicam",
+            "location": "Metz",
+            "role": "computer engineer (apprentice)",
+            "duration": "September 2018 - today",
+            "description": "REST API using .Net Core & Angular"
+        },
+        {
+            "company": "consulting firm",
+            "location": "Luxembourg",
+            "role": "junior back-end developer",
+            "duration": "June 2018 - August 2018",
+            "description": "REST API development with Flask"
+        },
+        {
+            "company": "consulting firm",
+            "location": "Luxembourg",
+            "role": "trainee back-end developer",
+            "duration": "April 2018 - June 2018",
+            "description": "PoC of a blockchain for document management with Flask"
+        },
+        {
+            "company": "SEM Numerica",
+            "location": "Montbéliard",
+            "role": "trainee micro-services developer",
+            "duration": "April 2017 - June 2017",
+            "description": "IoT development in Python, C and C++ using SQLite 3"
+        }
+    ],
+    "education": [
+        {
+            "school": "Telecom Nancy",
+            "location": "Nancy",
+            "degree": "IT engineer degree",
+            "duration": "September 2018 - Today"
+        },
+        {
+            "school": "Faculté des Sciences et Technologies",
+            "location": "Nancy",
+            "degree": "licence informatique (with mention)",
+            "duration": "September 2017 - June 2018"
+        },
+        {
+            "school": "Université de Belfort-Montbéliard",
+            "location": "Belfort",
+            "degree": "Diplôme Universitaire de Technologie (DUT) informatique",
+            "duration": "September 2015 - June 2017"
+        }
+    ],
+    "volunteering": [
+        {
+            "organization": "Université de Lorraine",
+            "role": "tech popularization",
+            "date": "2018",
+            "events": ["fête de la science", "mediation in school"]
+        },
+        {
+            "organization": "Ubuntu France",
+            "role": "tech popularization",
+            "date": "since 2015",
+            "events": ["ubuntu party"]
+        },
+        {
+            "organization": "Rencontres mondiales du logiciel libre",
+            "role": "logistic",
+            "date": "2014",
+            "events": ["RMLL"]
+        }
+    ],
+    "contests": [
+        {
+            "name": "Meilleur développeur de France",
+            "language": "Python"
+        },
+        {
+            "name": "Student dev battle",
+            "language": "Python"
+        },
+        {
+            "name": "BNP Java Challenge",
+            "language": "Java"
+        },
+        {
+            "name": "Shaker",
+            "language": "Python"
+        },
+        {
+            "name": "Hackatons",
+            "language": "Python - JavaScript"
+        }
+    ],
+    "interests": [
+        "public speaking and sense of contact",
+        "discovering new technologies (NLP, Deep Learning, etc.)",
+        "learning from and to others",
+        "open-source (Hacktoberfest, GitHub, etc.)"
+    ]
+}
