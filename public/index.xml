@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pierre Bouillon</title>
+    <link>https://pbouillon.github.io/</link>
+    <description>Recent content on Pierre Bouillon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://pbouillon.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About Me</title>
+      <link>https://pbouillon.github.io/about-me/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pbouillon.github.io/about-me/</guid>
+      <description>Hi, I&amp;rsquo;m Pierre Bouillon 👋 I&amp;rsquo;m a young french software engineer, passionate about new technologies, programming and sharing what I managed to learn along the way.
+I&amp;rsquo;m mostly into programming and software architecture, also curious about IoT and functional programming.
+I love making things work, usually using Python or C#, mostly fueled with optimism, enthusiasm and coffee. ☕
+You can find more about my projects on my GitHub !
+Skills I&amp;rsquo;m always keen to learn new languages, technologies or else.</description>
+    </item>
+    
+    <item>
+      <title>Résumé</title>
+      <link>https://pbouillon.github.io/r%C3%A9sum%C3%A9/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pbouillon.github.io/r%C3%A9sum%C3%A9/</guid>
+      <description>PDF versions Here is my résumé in english and in french.
+ ⚡ Fun fact: this résumé is written following the Markdown guidelines, just like this website&amp;rsquo;s content !
+ If you would like some more details or additional information, please feel free to contact me.
+Get in touch I&amp;rsquo;m always up to talk, feel free to send me an email
+You can also reach me on LinkedIn or even leave me an issue on my GitHub profile !</description>
+    </item>
+    
+  </channel>
+</rss>
