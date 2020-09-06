@@ -1,14 +1,16 @@
 +++
-title = "Resume"
+title = "Résumé"
 +++
 
-## Standard resume
+## PDF versions
 
-Here is [my resume](/fr-resume.pdf) (in french) as a PDF file.
+Here is my résumé [in english](/en-resume.pdf) and [in french](/fr-resume.pdf).
 
-> ⚡ Fun fact: the resume is written following the
+> ⚡ Fun fact: this résumé is written following the
 > [Markdown guidelines](https://guides.github.com/features/mastering-markdown/),
 > just like this website's content !
+
+If you would like some more details or additional information, please feel free to contact me.
 
 ## Get in touch
 
