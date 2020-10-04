@@ -41,14 +41,14 @@ are some of the one I worked with:
 🏆 Big or small, here are some of my achievements that I'm proud of !
 
 - **[MQTTTopicBuilder](https://github.com/pBouillon/MqttTopicBuilder) creator**  
-  With over 1.2K downloads, this C# library aims to provide a robust way for
+  With over 1.5K downloads, this C# library aims to provide a robust way for
   developer to handle MQTT topics in an OOP way instead of raw values
 - **[Bourse Coddity 2020](https://bourse.coddity.com/) winner**  
-  Along with a friend of mine, Raphaël Clarisse, I built from the ground a
+  Along with a friend of mine I built from the ground a
   RESTful API and the associated front-ends to help teachers organize virtual
   workshops for teenagers organized around tech topics such as the security,
-  raising awareness, etc. 
-- **[Hacktoberfest](https://hacktoberfest.digitalocean.com/) 2019 organizer**  
+  raising awareness, etc.
+- **[Hacktoberfest](https://hacktoberfest.digitalocean.com/) 2019 and 2020 organizer**  
   With the help of my engineering school, I organized my home town's first
   Hacktoberfest hub. Managing the local event, I was also a speaker to help
   newcomers to dive into the Open Source software and get started with git.
