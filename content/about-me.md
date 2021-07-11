@@ -35,7 +35,6 @@ are some of the one I worked with:
     },
     "meta": {
         "editors": ["VS Code", "VS 201X", "JetBrains suite"],
-        "domains": ["REST", "JWT", "API", "CQRS"],
         "scm": ["GitHub", "GitLab"],
         "vcs": ["git"]
     }
