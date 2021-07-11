@@ -61,10 +61,10 @@ developer to handle MQTT topics in an OOP way instead of raw values.
 
 ### [Bourse Coddity 2021](https://bourse.coddity.com/) winner
 
-Along with another student of my school, we build an ecosystem of tools around
+Along with another student of my school, we built an ecosystem of tools around
 fake-news prevention. On the top of a RESTful API, we created a front-end,
 a micro-service and a browser extension to allow users to rate the medias
-based on their trustfulness and assign them a _trust-index_.
+based on their trustfulness and assign them a trust index.
 
 > More about it:
 >
