@@ -58,7 +58,7 @@ developer to handle MQTT topics in an OOP way instead of raw values.
 > - [NuGet page](https://www.nuget.org/packages/MqttTopicBuilder/)
 > - [Documentation](https://pbouillon.gitbook.io/mqtttopicbuilder/)
 
-### [Bourse Coddity 2021](https://bourse.coddity.com/) winner
+### Bourse Coddity 2021 winner
 
 Along with another student of my school, we built an ecosystem of tools around
 fake-news prevention. On the top of a RESTful API, we created a front-end,
@@ -68,9 +68,9 @@ based on their trustfulness and assign them a trust index.
 > More about it:
 >
 > - [Contest page](https://bourse.coddity.com/)
-> - Github repository
+> - [Github repository](https://github.com/pbouillon/shepherd)
 
-### [Bourse Coddity 2020](https://bourse.coddity.com/) winner
+### Bourse Coddity 2020 winner
 
 Along with a friend of mine I built from the ground a
 RESTful API and the associated front-ends to help teachers organize virtual
