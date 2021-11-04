@@ -11,9 +11,9 @@ enableEmoji = true
   name = "Pierre Bouillon"
 
 [blackfriday]
-hrefTargetBlank = true
-noreferrerLinks = true
-nofollowLinks = true
+  hrefTargetBlank = true
+  noreferrerLinks = true
+  nofollowLinks = true
 
 [taxonomies]
   tag = "tags"
@@ -26,7 +26,7 @@ nofollowLinks = true
 
   themeColor = "#494f5c"
 
-  homeSubtitle = "Software Engineer | Privacy Advocate | Coffee Lover"
+  homeSubtitle = "Full Stack Software Engineer"
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank" rel="noopener">CC BY-NC 4.0</a>'
 
   justifyContent = false

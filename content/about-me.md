@@ -2,7 +2,7 @@
 title = "About Me"
 +++
 
-## Hi, I'm Pierre Bouillon 👋
+## Hi, I'm Pierre Bouillon
 
 I'm a young french software engineer, passionate about new technologies,
 programming and sharing what I managed to learn along the way.
@@ -13,7 +13,7 @@ about IoT and functional programming.
 I love making things work, usually using Python or C#, mostly fueled with
 optimism, enthusiasm and coffee. ☕
 
-You can find more about my projects on [my GitHub](https://github.com/pbouillon) !
+You can find more about my projects on [my GitHub](https://github.com/pbouillon).
 
 ---
 
@@ -25,16 +25,18 @@ are some of the one I worked with:
 {{< highlight json >}}
 {
     "langages": {
-        "favorites": ["C#", "Python"],
-        "used": ["Java", "JavaScript", "TypeScript"],
+        "favorites": ["C#", "Java", "Python"],
+        "used": ["JavaScript", "TypeScript"],
         "explored": ["Scala", "C", "C++"]
     },
     "technologies": {
         "backend": [".NET", "Spring", "Flask"],
-        "frontend": ["Angular"]
+        "frontend": ["Angular"],
+        "ops": ["Docker", "docker-compose"]
     },
     "meta": {
-        "editors": ["VS Code", "VS 201X", "JetBrains suite"],
+        "methodologies": ["Agile (with Scrum)", "git flow"],
+        "editors": ["VS Code", "Visual Studio", "JetBrains suite"],
         "scm": ["GitHub", "GitLab"],
         "vcs": ["git"]
     }
@@ -43,14 +45,27 @@ are some of the one I worked with:
 
 ---
 
-## Achievements 🏆
-
-Big or small, here are some of my achievements that I'm proud of !
+## Achievements
 
 ### MQTTTopicBuilder creator
 
-With around **2.8K downloads**, this C# library aims to provide a robust way for
-developer to handle MQTT topics in an OOP way instead of raw values.
+With around **2.9K downloads**, this C# library aims to provide a robust way for
+developer to handle MQTT topics in an OOP way instead of raw values by enforcing
+the various constraints that a topic must respect.
+
+{{< highlight "c#" >}}
+// Creating a topic as "Hello/From/Mqtt/Topic/Builder/#"
+var subscribeTo = new TopicBuilder(TopicConsumer.Subscriber)
+    .AddTopic("Hello")
+    .AddTopic("From")
+    .AddTopics("Mqtt", "Topic", "Builder")
+    .AddMultiLevelWildcard()
+    .Build();
+
+var topic = Topic.FromString("Hello/World");  // or (Topic) "Hello/World";
+Console.WriteLine(topic.Value);   // -> "Hello/World"
+Console.WriteLine(topic.Levels);  // -> 2
+{{< /highlight >}}
 
 > More about it:
 >
