@@ -4,7 +4,7 @@ title = "About Me"
 
 ## Hi, I'm Pierre Bouillon
 
-I'm a young french software engineer, passionate about new technologies,
+I'm a french software engineer, passionate about new technologies,
 programming and sharing what I managed to learn along the way.
 
 I'm mostly into programming and software architecture, also curious
@@ -24,20 +24,16 @@ are some of the one I worked with:
 
 {{< highlight json >}}
 {
-    "langages": {
-        "favorites": ["C#", "Java", "Python"],
-        "used": ["JavaScript", "TypeScript"],
-        "explored": ["Scala", "C", "C++"]
-    },
+    "langages": [ "C#", "Java", "Python", "TypeScript", "JavaScript" ],
     "technologies": {
         "backend": [".NET", "Spring", "Flask"],
-        "frontend": ["Angular"],
+        "frontend": ["Angular", "Tailwindcss"],
         "ops": ["Docker", "docker-compose"]
     },
     "meta": {
         "methodologies": ["Agile (with Scrum)", "git flow"],
         "editors": ["VS Code", "Visual Studio", "JetBrains suite"],
-        "scm": ["GitHub", "GitLab"],
+        "scm": ["GitHub", "GitLab", "Azure DevOps"],
         "vcs": ["git"]
     }
 }
@@ -49,7 +45,7 @@ are some of the one I worked with:
 
 ### MQTTTopicBuilder creator
 
-With around **2.9K downloads**, this C# library aims to provide a robust way for
+With around **3.3K downloads**, this C# library aims to provide a robust way for
 developer to handle MQTT topics in an OOP way instead of raw values by enforcing
 the various constraints that a topic must respect.
 
