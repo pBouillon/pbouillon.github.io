@@ -34,6 +34,7 @@
     "@babel/core": "^7.17.8",
     "@compodoc/compodoc": "^1.1.19",
     "@storybook/addon-actions": "^6.4.20",
+    "@storybook/addon-backgrounds": "^6.4.20",
     "@storybook/addon-essentials": "^6.4.20",
     "@storybook/addon-interactions": "^6.4.20",
     "@storybook/addon-links": "^6.4.20",

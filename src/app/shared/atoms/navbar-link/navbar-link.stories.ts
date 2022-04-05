@@ -17,7 +17,10 @@ export default {
       providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
     }),
     componentWrapperDecorator(
-      (story) => `<div style="width: fit-content">${story}</div>`
+      (story) => `
+      <div style="width: fit-content">
+        ${story}
+      </div>`
     ),
   ],
   title: 'Atoms/Navbar link',

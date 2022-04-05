@@ -18,6 +18,7 @@ describe('NavbarLinkComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(NavbarLinkComponent);
     component = fixture.componentInstance;
+
     a = fixture.nativeElement.querySelector('a');
   });
 
@@ -28,18 +29,21 @@ describe('NavbarLinkComponent', () => {
   it('should render the label', () => {
     component.label = 'Label';
     fixture.detectChanges();
+
     expect(a.textContent).toContain('Label');
   });
 
   it('should not render the icon when the target is not external', () => {
     component.isExternal = false;
     fixture.detectChanges();
+
     expect(a.querySelector('i')).toBeFalsy();
   });
 
   it('should render the icon when the target is external', () => {
     component.isExternal = true;
     fixture.detectChanges();
+
     expect(a.querySelector('i')).toBeTruthy();
   });
 });

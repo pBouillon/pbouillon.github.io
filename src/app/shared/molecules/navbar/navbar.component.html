@@ -1,0 +1,19 @@
+<div class="flex items-center justify-between px-4 py-2 bg-white shadow-lg">
+  <a routerLink="/" class="text-2xl font-semibold tracking-wide">
+    {{ title }}
+  </a>
+
+  <nav class="justify-end hidden gap-4 md:flex">
+    <app-navbar-link
+      *ngFor="let link of links"
+      [href]="link.href"
+      [label]="link.label"
+      [isExternal]="link.isExternal"
+    ></app-navbar-link>
+  </nav>
+
+  <i
+    (click)="onBurgerMenuClicked.emit()"
+    class="visible md:hidden bi bi-list"
+  ></i>
+</div>

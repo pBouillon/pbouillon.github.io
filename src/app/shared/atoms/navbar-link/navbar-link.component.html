@@ -1,0 +1,15 @@
+<a
+  class="flex items-center gap-2 tracking-wide border-b-2 border-transparent hover:border-sky-500"
+  [routerLink]="href"
+  [target]="isExternal ? '_blank' : '_self'"
+  (mouseenter)="isHovered = true"
+  (mouseleave)="isHovered = false"
+>
+  {{ label }}
+  <span *ngIf="isExternal">
+    <i
+      class="text-xs bi bi-box-arrow-up-right"
+      [ngClass]="isHovered ? 'text-inherit' : 'text-gray-400'"
+    ></i>
+  </span>
+</a>
