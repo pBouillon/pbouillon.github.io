@@ -1,19 +1,25 @@
-import { Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navbar-link',
   template: `
     <a
-      class="flex gap-2 items-center tracking-wide hover:underline decoration-2 decoration-blue-500"
+      class="flex gap-2 items-center tracking-wide hover:border-b-2 border-blue-500"
       [routerLink]="href"
       [target]="isExternal ? '_blank' : '_self'"
+      (mouseenter)="isHovered = true"
+      (mouseleave)="isHovered = false"
     >
       {{ label }}
       <span *ngIf="isExternal">
-        <i class="bi bi-box-arrow-up-right text-xs text-gray-400"></i>
+        <i
+          class="bi bi-box-arrow-up-right text-xs"
+          [ngClass]="isHovered ? 'text-inherit' : 'text-gray-400'"
+        ></i>
       </span>
     </a>
   `,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class NavbarLinkComponent {
   /**
@@ -33,4 +39,9 @@ export class NavbarLinkComponent {
    */
   @Input()
   isExternal: boolean = false;
+
+  /**
+   * Whether the link is hovered or not
+   */
+  isHovered: boolean = false;
 }
