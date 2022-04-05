@@ -31,17 +31,17 @@ module.exports = function (config) {
     },
     reporters: ['progress', 'kjhtml'],
     port: 9876,
-    colors: true,
+    colors: false,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Firefox'],
+    browsers: ['FirefoxHeadless'],
     customLaunchers: {
       FirefoxHeadless: {
         base: 'Firefox',
         flags: ['-headless'],
       },
     },
-    singleRun: false,
-    restartOnFileChange: true,
+    singleRun: true,
+    restartOnFileChange: false,
   });
 };

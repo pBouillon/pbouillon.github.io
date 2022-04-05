@@ -1,0 +1,45 @@
+name: Continuous Integration
+
+on: [push]
+
+jobs:
+  build:
+    name: Build the Angular project
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Install dependencies
+        run: npm install
+      - name: Build the Angular project
+        run: npm run build -- --configuration=production
+
+  test:
+    name: Test the Angular project
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Install dependencies
+        run: npm install
+      - name: Test the Angular project
+        run: npm run test -- --karma-config=karma.conf.ci.js
+
+  storybook:
+    name: Build Storybook
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Install dependencies
+        run: npm install
+      - name: Build Storybook
+        run: npm run build-storybook
