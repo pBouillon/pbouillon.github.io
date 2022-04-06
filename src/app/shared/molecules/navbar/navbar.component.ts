@@ -5,12 +5,7 @@ import {
   Input,
   Output,
 } from '@angular/core';
-
-type NavbarLink = {
-  href: string;
-  label: string;
-  isExternal: boolean;
-};
+import { NavbarLink } from 'src/app/core/models/navbar-link.model';
 
 @Component({
   selector: 'app-navbar',
