@@ -4,7 +4,9 @@
     (click)="onCloseRequested.emit()"
   ></div>
 
-  <div class="fixed w-full max-w-xs p-6 bg-white rounded-lg shadow-lg top-4 right-4">
+  <div
+    class="fixed w-full max-w-xs p-6 bg-white rounded-lg shadow-lg  top-4 right-4"
+  >
     <div class="absolute top-5 right-5">
       <button type="button" (click)="onCloseRequested.emit()">
         <i class="text-xl text-gray-400 bi bi-x-lg"></i>
@@ -19,5 +21,12 @@
         [isExternal]="link.isExternal"
       ></app-navbar-link>
     </nav>
+
+    <div class="pt-5 mt-5 border-t border-gray-500">
+      <app-dark-mode-toggler-selector
+        [isDarkModeEnabled]="isDarkModeEnabled"
+        (onToggleDarkMode)="onToggleDarkMode.emit()"
+      ></app-dark-mode-toggler-selector>
+    </div>
   </div>
 </div>

@@ -14,6 +14,12 @@ import { NavbarLink } from 'src/app/core/models/navbar-link.model';
 })
 export class NavbarBlockComponent {
   /**
+   * Whether the dark mode is enabled or not
+   */
+  @Input()
+  isDarkModeEnabled: boolean = false;
+
+  /**
    * The links displayed in the navbar
    */
   @Input()
@@ -24,4 +30,10 @@ export class NavbarBlockComponent {
    */
   @Output()
   onCloseRequested = new EventEmitter<void>();
+
+  /**
+   * Emitted when the user clicks to toggle the dark mode
+   */
+  @Output()
+  onToggleDarkMode = new EventEmitter<void>();
 }
