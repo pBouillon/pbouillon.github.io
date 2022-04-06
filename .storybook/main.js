@@ -3,6 +3,7 @@ module.exports = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-actions',
+    '@storybook/addon-viewport',
     '@storybook/addon-essentials',
     '@storybook/addon-backgrounds',
     '@storybook/addon-interactions',
