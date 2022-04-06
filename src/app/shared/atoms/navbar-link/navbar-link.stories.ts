@@ -1,7 +1,6 @@
 import { APP_BASE_HREF, CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import {
-  componentWrapperDecorator,
   Meta,
   moduleMetadata,
   Story,
@@ -16,12 +15,6 @@ export default {
       imports: [CommonModule, RouterModule.forRoot([])],
       providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
     }),
-    componentWrapperDecorator(
-      (story) => `
-      <div style="width: fit-content">
-        ${story}
-      </div>`
-    ),
   ],
   title: 'Atoms/Navbar link',
 } as Meta;
