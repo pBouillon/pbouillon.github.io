@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-navbar-link',
@@ -28,4 +29,16 @@ export class NavbarLinkComponent {
    * Whether the link is hovered or not
    */
   isHovered: boolean = false;
+
+  constructor(
+    private readonly _router: Router,
+  ) { }
+
+  navigateToUrl(): void {
+    if (this.isExternal) {
+      window.open(this.href, '_blank');
+    } else {
+      this._router.navigate([this.href]);
+    }
+  }
 }
