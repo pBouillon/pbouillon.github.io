@@ -16,6 +16,10 @@ import { NavbarBlockComponent } from './molecules/navbar-block/navbar-block.comp
   imports: [
     CommonModule,
     RouterModule,
-  ]
+  ],
+  exports: [
+    NavbarComponent,
+    NavbarBlockComponent,
+  ],
 })
 export class SharedModule { }
