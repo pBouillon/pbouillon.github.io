@@ -1,7 +1,33 @@
 import { setCompodocJson } from '@storybook/addon-docs/angular';
-import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import docJson from '../documentation.json';
 setCompodocJson(docJson);
+
+const customViewports = {
+  galaxys9: {
+    name: 'Galaxy S9',
+    styles: {
+      height: '740px',
+      width: '360px',
+    },
+    type: 'mobile',
+  },
+  ipad: {
+    name: 'iPad',
+    styles: {
+      height: '1024px',
+      width: '768px',
+    },
+    type: 'tablet',
+  },
+  iphone12: {
+    name: 'iPhone 12',
+    styles: {
+      height: '844px',
+      width: '390px',
+    },
+    type: 'mobile',
+  },
+};
 
 export const parameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -22,6 +48,6 @@ export const parameters = {
   },
   docs: { inlineStories: true },
   viewport: {
-    viewports: INITIAL_VIEWPORTS,
+    viewports: customViewports,
   },
 };
