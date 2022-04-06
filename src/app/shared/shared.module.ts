@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { NavbarComponent } from './molecules/navbar/navbar.component';
 import { NavbarBlockComponent } from './molecules/navbar-block/navbar-block.component';
 import { DarkModeTogglerIconComponent } from './atoms/dark-mode-toggler-icon/dark-mode-toggler-icon.component';
+import { DarkModeTogglerSelectorComponent } from './atoms/dark-mode-toggler-selector/dark-mode-toggler-selector.component';
 
 
 
@@ -14,6 +15,7 @@ import { DarkModeTogglerIconComponent } from './atoms/dark-mode-toggler-icon/dar
     NavbarComponent,
     NavbarBlockComponent,
     DarkModeTogglerIconComponent,
+    DarkModeTogglerSelectorComponent,
   ],
   imports: [
     CommonModule,
