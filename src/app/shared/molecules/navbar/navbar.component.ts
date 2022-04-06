@@ -30,4 +30,10 @@ export class NavbarComponent {
    */
   @Output()
   onBurgerMenuClicked = new EventEmitter<void>();
+
+  /**
+   * Emitted when the user clicks to toggle the dark mode
+   */
+  @Output()
+  onToggleDarkMode = new EventEmitter<void>();
 }

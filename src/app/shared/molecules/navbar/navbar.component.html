@@ -1,15 +1,19 @@
-<div class="flex items-center justify-between p-4 bg-white shadow-lg">
+<div class="flex items-center justify-between p-5 bg-white shadow-lg">
   <a routerLink="/" class="text-2xl font-semibold tracking-wide md:text-3xl">
     {{ title }}
   </a>
 
-  <nav class="hidden gap-8 text-xl md:flex">
+  <nav class="items-center hidden gap-8 text-xl md:flex">
     <app-navbar-link
       *ngFor="let link of links"
       [href]="link.href"
       [label]="link.label"
       [isExternal]="link.isExternal"
     ></app-navbar-link>
+
+    <app-dark-mode-toggler-icon
+      (onToggleDarkMode)="onToggleDarkMode.emit()"
+    ></app-dark-mode-toggler-icon>
   </nav>
 
   <i

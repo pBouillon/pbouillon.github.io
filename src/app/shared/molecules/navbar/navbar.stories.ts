@@ -19,12 +19,14 @@ export default {
 
 const actionsData = {
   onBurgerMenuClicked: action('onBurgerMenuClicked'),
+  onToggleDarkMode: action('onToggleDarkMode'),
 };
 
 const Template: Story = (args) => ({
   props: {
     ...args,
     onBurgerMenuClicked: actionsData.onBurgerMenuClicked,
+    onToggleDarkMode: actionsData.onToggleDarkMode,
   },
 });
 
