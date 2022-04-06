@@ -26,9 +26,11 @@ export class DarkModeTogglerSelectorComponent {
 
   /**
    * Emitted when the user clicks to toggle the dark mode
-   * @param theme The value of the theme requested by the user
+   * @param event The selection event
    */
-  onThemeSelected(theme: string): void {
+  onThemeSelected(event: any): void {
+    const theme = event.target.value;
+
     const hasValueChanged =
       (theme === 'light' && this.isDarkModeEnabled)
       || (theme === 'dark' && !this.isDarkModeEnabled);
