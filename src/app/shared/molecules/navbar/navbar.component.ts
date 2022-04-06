@@ -20,6 +20,12 @@ export class NavbarComponent {
   title: string = '';
 
   /**
+   * Whether the dark mode is enabled or not
+   */
+  @Input()
+  isDarkModeEnabled: boolean = false;
+
+  /**
    * The links displayed in the navbar
    */
   @Input()

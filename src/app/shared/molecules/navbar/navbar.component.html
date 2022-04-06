@@ -12,6 +12,7 @@
     ></app-navbar-link>
 
     <app-dark-mode-toggler-icon
+      [isDarkModeEnabled]="isDarkModeEnabled"
       (onToggleDarkMode)="onToggleDarkMode.emit()"
     ></app-dark-mode-toggler-icon>
   </nav>

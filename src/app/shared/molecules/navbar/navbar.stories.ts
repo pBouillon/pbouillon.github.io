@@ -2,6 +2,7 @@ import { APP_BASE_HREF, CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { action } from '@storybook/addon-actions';
 import { Meta, moduleMetadata, Story } from '@storybook/angular';
+import { DarkModeTogglerIconComponent } from '../../atoms/dark-mode-toggler-icon/dark-mode-toggler-icon.component';
 import { NavbarLinkComponent } from '../../atoms/navbar-link/navbar-link.component';
 import { NavbarComponent } from './navbar.component';
 
@@ -9,7 +10,11 @@ export default {
   component: NavbarComponent,
   decorators: [
     moduleMetadata({
-      declarations: [NavbarComponent, NavbarLinkComponent],
+      declarations: [
+        NavbarComponent,
+        NavbarLinkComponent,
+        DarkModeTogglerIconComponent,
+      ],
       imports: [CommonModule, RouterModule.forRoot([])],
       providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
     }),
@@ -33,6 +38,7 @@ const Template: Story = (args) => ({
 export const Default = Template.bind({});
 Default.args = {
   title: 'Navbar',
+  isDarkModeEnabled: false,
   links: [
     {
       href: '#',
