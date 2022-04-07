@@ -7,6 +7,7 @@ module.exports = {
     '@storybook/addon-essentials',
     '@storybook/addon-backgrounds',
     '@storybook/addon-interactions',
+    'storybook-tailwind-dark-mode'
   ],
   framework: '@storybook/angular',
   core: {
