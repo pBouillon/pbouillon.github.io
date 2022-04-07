@@ -3,19 +3,21 @@
     {{ title }}
   </a>
 
-  <nav class="items-center hidden gap-8 text-xl md:flex">
-    <app-navbar-link
-      *ngFor="let link of links"
-      [href]="link.href"
-      [label]="link.label"
-      [isExternal]="link.isExternal"
-    ></app-navbar-link>
+  <div class="flex gap-8">
+    <nav class="items-center hidden gap-8 text-xl md:flex">
+      <app-navbar-link
+        *ngFor="let link of links"
+        [href]="link.href"
+        [label]="link.label"
+        [isExternal]="link.isExternal"
+      ></app-navbar-link>
+    </nav>
 
     <app-dark-mode-toggler-icon
       [isDarkModeEnabled]="isDarkModeEnabled"
       (onToggleDarkMode)="onToggleDarkMode.emit()"
     ></app-dark-mode-toggler-icon>
-  </nav>
+  </div>
 
   <i
     class="visible text-2xl md:hidden bi bi-list"
