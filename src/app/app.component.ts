@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { NavbarLink } from './core/models/navbar-link.model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   links: NavbarLink[] = [
     {
       href: '',
@@ -27,10 +27,23 @@ export class AppComponent {
   isDarkModeEnabled = false;
   showMobileNavbar = false;
 
-  toggleDarkMode(): void {
-    const root = document.documentElement;
-    root.classList.toggle('dark');
+  ngOnInit(): void {
+    const isDarkThemePreferred = localStorage['theme'] === 'dark'
+      || window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-    this.isDarkModeEnabled = !this.isDarkModeEnabled;
+    if (isDarkThemePreferred) {
+      this.isDarkModeEnabled = true;
+      document.documentElement.classList.add('dark');
+    }
+  }
+
+  toggleDarkMode(): void {
+    const isDarkModeSet = document.documentElement.classList.toggle('dark');
+
+    this.isDarkModeEnabled = isDarkModeSet;
+
+    if (isDarkModeSet) {
+      localStorage['theme'] = 'dark';
+    }
   }
 }
