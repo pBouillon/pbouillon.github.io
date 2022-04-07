@@ -6,6 +6,7 @@ import { NavbarComponent } from './molecules/navbar/navbar.component';
 import { NavbarBlockComponent } from './molecules/navbar-block/navbar-block.component';
 import { DarkModeTogglerIconComponent } from './atoms/dark-mode-toggler-icon/dark-mode-toggler-icon.component';
 import { DarkModeTogglerSelectorComponent } from './atoms/dark-mode-toggler-selector/dark-mode-toggler-selector.component';
+import { PageTitleComponent } from './atoms/page-title/page-title.component';
 
 
 
@@ -16,6 +17,7 @@ import { DarkModeTogglerSelectorComponent } from './atoms/dark-mode-toggler-sele
     NavbarBlockComponent,
     DarkModeTogglerIconComponent,
     DarkModeTogglerSelectorComponent,
+    PageTitleComponent,
   ],
   imports: [
     CommonModule,
@@ -24,6 +26,7 @@ import { DarkModeTogglerSelectorComponent } from './atoms/dark-mode-toggler-sele
   exports: [
     NavbarComponent,
     NavbarBlockComponent,
+    PageTitleComponent,
   ],
 })
 export class SharedModule { }
