@@ -1,11 +1,15 @@
 <app-navbar
-  [title]="title"
+  title="Pierre Bouillon"
   [links]="links"
+  [isDarkModeEnabled]="isDarkModeEnabled"
   (onBurgerMenuClicked)="showMobileNavbar = true"
+  (onToggleDarkMode)="toggleDarkMode()"
 ></app-navbar>
 
 <app-navbar-block
   *ngIf="showMobileNavbar"
   [links]="links"
+  [isDarkModeEnabled]="isDarkModeEnabled"
   (onCloseRequested)="showMobileNavbar = false"
+  (onToggleDarkMode)="toggleDarkMode()"
 ></app-navbar-block>

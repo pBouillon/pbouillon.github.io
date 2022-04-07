@@ -6,8 +6,6 @@ import { NavbarLink } from './core/models/navbar-link.model';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  title = 'Pierre Bouillon';
-
   links: NavbarLink[] = [
     {
       href: '',
@@ -26,5 +24,13 @@ export class AppComponent {
     },
   ];
 
+  isDarkModeEnabled = false;
   showMobileNavbar = false;
+
+  toggleDarkMode(): void {
+    const root = document.documentElement;
+    root.classList.toggle('dark');
+
+    this.isDarkModeEnabled = !this.isDarkModeEnabled;
+  }
 }
