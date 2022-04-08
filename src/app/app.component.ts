@@ -14,7 +14,7 @@ export class AppComponent implements OnInit {
     },
     {
       href: 'about-me',
-      label: 'Qui suis-je',
+      label: 'Qui suis-je ?',
       isExternal: false,
     },
     {
