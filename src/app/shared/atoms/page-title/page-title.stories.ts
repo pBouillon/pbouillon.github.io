@@ -10,7 +10,7 @@ export default {
       imports: [CommonModule],
     }),
   ],
-  title: 'Molecules/Page title',
+  title: 'Atoms/Page title',
 } as Meta;
 
 const Template: Story = (args) => ({
