@@ -28,22 +28,23 @@ export class AppComponent implements OnInit {
   showMobileNavbar = false;
 
   ngOnInit(): void {
-    const isDarkThemePreferred = localStorage['theme'] === 'dark'
-      || window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isDarkThemePreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isLightThemeSet = localStorage['theme'] === 'light';
 
-    if (isDarkThemePreferred) {
+    if (isDarkThemePreferred && !isLightThemeSet) {
       this.isDarkModeEnabled = true;
       document.documentElement.classList.add('dark');
     }
   }
 
+  /**
+   * Toggle dark mode based on the current theme
+   */
   toggleDarkMode(): void {
     const isDarkModeSet = document.documentElement.classList.toggle('dark');
 
     this.isDarkModeEnabled = isDarkModeSet;
 
-    if (isDarkModeSet) {
-      localStorage['theme'] = 'dark';
-    }
+    localStorage['theme'] = isDarkModeSet ? 'dark' : 'light';
   }
 }
