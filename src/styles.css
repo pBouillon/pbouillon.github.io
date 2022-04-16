@@ -3,3 +3,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.page-container {
+  @apply mx-5 mt-24 space-y-4 md:mt-32 md:space-y-16 md:w-1/2 md:mx-auto dark:text-slate-200 text-slate-700;
+}
