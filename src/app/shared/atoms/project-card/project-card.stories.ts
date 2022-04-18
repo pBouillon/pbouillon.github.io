@@ -37,6 +37,6 @@ WithoutLink.args = {
   ...Default.args,
   summary: {
     ...Default.args['summary'],
-    link: null,
+    link: undefined,
   },
 };

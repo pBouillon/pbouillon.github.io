@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ProjectCardComponent } from './project-card.component';
 
 describe('ProjectCardComponent', () => {
@@ -8,25 +7,24 @@ describe('ProjectCardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ProjectCardComponent ]
-    })
-    .compileComponents();
+      declarations: [ProjectCardComponent],
+    }).compileComponents();
   });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(ProjectCardComponent);
     component = fixture.componentInstance;
-  });
 
-  it('should create', () => {
     component.summary = {
       name: 'Name',
       description: 'Description',
       link: '#',
       technologies: [],
-    }
-    fixture.detectChanges();
+    };
+  });
 
+  it('should create', () => {
+    fixture.detectChanges();
     expect(component).toBeTruthy();
   });
 });
