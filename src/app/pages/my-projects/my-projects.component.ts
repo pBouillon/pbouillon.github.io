@@ -32,13 +32,13 @@ export class MyProjectsComponent {
         hexagonale
       `,
       link: 'https://github.com/pBouillon/todo-list',
-      technologies: ['Spring Boot', 'Java 11', 'SpringFox', 'Lombok', 'docker'],
+      technologies: ['Spring Boot', 'Java 11', 'MapStruct', 'Lombok', 'docker'],
     },
     {
       name: 'MqttTopicBuilder',
       description: `
         NuGet destiné à simplifier la création de topics MQTT en s'assurant de
-        leur validité
+        leur validité en fournissant une API orientée objets et non primitives
       `,
       link: 'https://nuget.org/packages/MqttTopicBuilder/',
       technologies: ['.NET Standard 2.0', 'C# 8.0'],
