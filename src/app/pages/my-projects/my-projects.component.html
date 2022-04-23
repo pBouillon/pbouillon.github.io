@@ -1,0 +1,26 @@
+<div class="space-y-8 page-container">
+  <h1 class="text-2xl font-semibold md:text-4xl">Mes projets</h1>
+
+  <p>
+    Durant mon temps libre, j'ai eu l'occasion de travailler sur quelques
+    projets qui me tenaient à cœur, que ce soit dans un but ludique, pédagogique
+    ou simplement par curiosité.
+  </p>
+
+  <p>
+    Mes principaux projets sont listés ci-dessous. Pour une liste exhaustive,
+    n'hésitez pas à consulter
+    <a
+      class="underline text-sky-500"
+      href="https://github.com/pbouillon"
+      target="_blank"
+    >mon profil GitHub</a>.
+  </p>
+
+  <div class="grid grid-cols-1 gap-8 pb-5 auto-rows-max md:grid-cols-2">
+    <app-project-card
+      *ngFor="let project of projects"
+      [summary]="project">
+    </app-project-card>
+  </div>
+</div>
