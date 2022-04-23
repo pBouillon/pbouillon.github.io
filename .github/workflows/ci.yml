@@ -43,3 +43,29 @@ jobs:
         run: npm install
       - name: Build Storybook
         run: npm run build-storybook
+
+  publish:
+    name: Publish the Angular project
+    if: github.branch == master
+    runs-on: ubuntu-latest
+    needs: [build, test]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Install dependencies
+        run: npm install
+      - name: Cleanup the previous bundle
+        run: rm -rf docs/
+      - name: Build the Angular project
+        run:  |
+          npm run build -- --configuration=production --output-path=docs/
+          cp docs/index.html docs/404.html
+      - name: Publish the new bundle
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add docs/
+          git commit -m "[GitHub Actions] Regenerate the application's bundle"
+          git push
