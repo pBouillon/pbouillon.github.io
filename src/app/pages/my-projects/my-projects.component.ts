@@ -21,7 +21,7 @@ export class MyProjectsComponent {
         Référentiel amateur de figures de style françaises visant à vulgariser
         leurs définitions et usages.
       `,
-      link: 'https://pbouillon.github.io/locutionis',
+      link: 'https://locutionis.vercel.app',
       technologies: ['Svelte', 'SvelteKit', 'TailwindCSS'],
     },
     {
