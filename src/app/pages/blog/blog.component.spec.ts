@@ -1,8 +1,8 @@
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { of } from 'rxjs';
 import { Article } from 'src/app/core/models/article.model';
 import { DevService } from 'src/app/core/services/dev.service';
-
 import { BlogComponent } from './blog.component';
 
 describe('BlogComponent', () => {
