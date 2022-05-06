@@ -9,7 +9,7 @@ import { ProjectCardComponent } from './molecules/project-card/project-card.comp
 import { NavbarBlockComponent } from './molecules/navbar-block/navbar-block.component';
 import { NavbarComponent } from './molecules/navbar/navbar.component';
 import { TagComponent } from './atoms/tag/tag.component';
-import { ArticleComponent } from './molecules/article/article.component';
+import { ArticleCardComponent } from './molecules/article-card/article-card.component';
 import { TagsComponent } from './molecules/tags/tags.component';
 
 @NgModule({
@@ -22,7 +22,7 @@ import { TagsComponent } from './molecules/tags/tags.component';
     PageTitleComponent,
     ProjectCardComponent,
     TagComponent,
-    ArticleComponent,
+    ArticleCardComponent,
     TagsComponent,
   ],
   imports: [CommonModule, RouterModule],
@@ -31,7 +31,7 @@ import { TagsComponent } from './molecules/tags/tags.component';
     NavbarBlockComponent,
     PageTitleComponent,
     ProjectCardComponent,
-    ArticleComponent,
+    ArticleCardComponent,
   ],
 })
 export class SharedModule {}
