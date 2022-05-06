@@ -10,7 +10,7 @@ export default {
       imports: [CommonModule],
     }),
   ],
-  title: 'Atoms/Project card',
+  title: 'Molecules/Project card',
 } as Meta;
 
 const Template: Story = (args) => ({
