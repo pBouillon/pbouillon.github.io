@@ -17,4 +17,8 @@ export class ArticleCardComponent {
    * Whether the link is hovered or not
    */
   isHovered: boolean = false;
+
+  navigateToArticle(): void {
+    window.location.href = this.article.url;
+  }
 }
