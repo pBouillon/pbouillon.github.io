@@ -3,7 +3,7 @@
     {{ title }}
   </a>
 
-  <div class="hidden gap-8 md:flex">
+  <div class="hidden gap-8 lg:flex">
     <nav class="flex items-center gap-8 text-xl">
       <app-navbar-link
         *ngFor="let link of links"
@@ -20,7 +20,7 @@
   </div>
 
   <i
-    class="visible text-2xl md:hidden bi bi-list"
+    class="visible text-2xl lg:hidden bi bi-list"
     (click)="onBurgerMenuClicked.emit()"
   ></i>
 </div>

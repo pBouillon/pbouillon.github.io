@@ -6,6 +6,7 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MyProjectsComponent } from './pages/my-projects/my-projects.component';
 import { SharedModule } from './shared/shared.module';
+import { BlogComponent } from './pages/blog/blog.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { SharedModule } from './shared/shared.module';
     HomeComponent,
     AboutMeComponent,
     MyProjectsComponent,
+    BlogComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, SharedModule],
   providers: [],
