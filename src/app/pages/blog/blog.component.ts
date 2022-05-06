@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { EMPTY, Observable } from 'rxjs';
-import { DevArticle } from 'src/app/core/models/dev-article.model';
+import { Article } from 'src/app/core/models/article.model';
 import { DevService } from 'src/app/core/services/dev.service';
 
 @Component({
@@ -8,11 +8,11 @@ import { DevService } from 'src/app/core/services/dev.service';
   templateUrl: './blog.component.html',
 })
 export class BlogComponent implements OnInit {
-  articles$: Observable<DevArticle[]> = EMPTY;
+  articles$: Observable<Article[]> = EMPTY;
 
   constructor(private readonly devService: DevService) {}
 
   ngOnInit(): void {
-    this.articles$ = this.devService.getArticles();
+    this.articles$ = this.devService.getArticles(3);
   }
 }
