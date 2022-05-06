@@ -5,9 +5,12 @@ import { DarkModeTogglerIconComponent } from './atoms/dark-mode-toggler-icon/dar
 import { DarkModeTogglerSelectorComponent } from './atoms/dark-mode-toggler-selector/dark-mode-toggler-selector.component';
 import { NavbarLinkComponent } from './atoms/navbar-link/navbar-link.component';
 import { PageTitleComponent } from './atoms/page-title/page-title.component';
-import { ProjectCardComponent } from './atoms/project-card/project-card.component';
+import { ProjectCardComponent } from './molecules/project-card/project-card.component';
 import { NavbarBlockComponent } from './molecules/navbar-block/navbar-block.component';
 import { NavbarComponent } from './molecules/navbar/navbar.component';
+import { TagComponent } from './atoms/tag/tag.component';
+import { ArticleComponent } from './molecules/article/article.component';
+import { TagsComponent } from './molecules/tags/tags.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,9 @@ import { NavbarComponent } from './molecules/navbar/navbar.component';
     DarkModeTogglerSelectorComponent,
     PageTitleComponent,
     ProjectCardComponent,
+    TagComponent,
+    ArticleComponent,
+    TagsComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
@@ -25,6 +31,7 @@ import { NavbarComponent } from './molecules/navbar/navbar.component';
     NavbarBlockComponent,
     PageTitleComponent,
     ProjectCardComponent,
+    ArticleComponent,
   ],
 })
 export class SharedModule {}
