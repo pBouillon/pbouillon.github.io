@@ -1,0 +1,37 @@
+<div
+  class="flex flex-col justify-between h-full max-w-lg gap-4 p-3 border rounded-lg shadow-lg border-slate-300 text-slate-700 dark:text-slate-200"
+>
+  <ng-template *ngIf="summary.link; then link; else noLink"></ng-template>
+
+  <ng-template #link>
+    <a
+      tabindex="0"
+      role="link"
+      title="Vers le projet"
+      [href]="summary.link"
+      target="_blank"
+      class="flex items-baseline gap-2 text-xl border-b-2 w-fit border-sky-500"
+      (mouseenter)="isHovered = true"
+      (mouseleave)="isHovered = false"
+    >
+      {{ summary.name }}
+
+      <i
+        class="text-sm bi bi-box-arrow-up-right"
+        [ngClass]="isHovered ? 'text-inherit' : 'text-slate-400'"
+      ></i>
+    </a>
+  </ng-template>
+
+  <ng-template #noLink>
+    <p
+      class="flex items-baseline gap-2 text-xl border-b-2 w-fit border-sky-500"
+    >
+      {{ summary.name }}
+    </p>
+  </ng-template>
+
+  <p>{{ summary.description }}</p>
+
+  <app-tags [tags]="summary.technologies"></app-tags>
+</div>

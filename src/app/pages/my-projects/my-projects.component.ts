@@ -13,7 +13,7 @@ export class MyProjectsComponent {
         Ma page personnelle, celle-la même affichée actuellement
       `,
       link: 'https://pbouillon.github.io',
-      technologies: ['Angular 13', 'TailwindCSS', 'Storybook'],
+      technologies: ['Angular 13', 'TailwindCSS'],
     },
     {
       name: 'Locutionis',

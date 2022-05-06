@@ -13,13 +13,18 @@ export class AppComponent implements OnInit {
       isExternal: false,
     },
     {
-      href: 'my-projects',
-      label: 'Mes projets',
+      href: 'about-me',
+      label: 'Qui suis-je ?',
       isExternal: false,
     },
     {
-      href: 'about-me',
-      label: 'Qui suis-je ?',
+      href: 'blog',
+      label: 'Blog',
+      isExternal: false,
+    },
+    {
+      href: 'my-projects',
+      label: 'Mes projets',
       isExternal: false,
     },
     {
