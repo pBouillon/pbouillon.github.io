@@ -1,7 +1,7 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
-import { DevArticle } from '../models/dev-article.model';
+import { map, Observable } from 'rxjs';
+import { Article } from '../models/article.model';
 
 @Injectable({
   providedIn: 'root',
@@ -11,9 +11,24 @@ export class DevService {
 
   constructor(private readonly http: HttpClient) {}
 
-  getArticles(): Observable<DevArticle[]> {
-    return this.http.get<DevArticle[]>(
-      `${this.BASE_URL}/articles?username=pbouillon`
-    );
+  /**
+   * Retrieve all articles that I have written on DEV
+   * @returns A list of {@link DevArticle}
+   */
+  getArticles(perPage: number): Observable<Article[]> {
+    const params = new HttpParams()
+      .set('username', 'pbouillon')
+      .set('per_page', perPage);
+
+    return this.http
+      .get<Article[]>(`${this.BASE_URL}/articles`, { params })
+      .pipe(
+        map((articles) =>
+          articles.map((article: any) => ({
+            ...article,
+            tags: article.tags.split(','),
+          }))
+        )
+      );
   }
 }
