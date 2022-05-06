@@ -16,10 +16,17 @@ describe('ArticleComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ArticleComponent);
     component = fixture.componentInstance;
-    fixture.detectChanges();
+
+    component.article = {
+      url: 'url',
+      title: 'title',
+      description: 'description',
+      tags: ['tag1', 'tag2'],
+    };
   });
 
   it('should create', () => {
+    fixture.detectChanges();
     expect(component).toBeTruthy();
   });
 });

@@ -28,7 +28,9 @@ describe('DevService', () => {
       },
     ];
 
-    httpClientSpy.get.and.returnValue(of(expectedArticles));
+    const rawArticles: any[] = expectedArticles.map(article => ({...article, tags: article.tags.join(',')}))
+
+    httpClientSpy.get.and.returnValue(of(rawArticles));
 
     service.getArticles(expectedArticles.length).subscribe({
       next: (articles) => {
