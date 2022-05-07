@@ -11,6 +11,7 @@ import { NavbarComponent } from './molecules/navbar/navbar.component';
 import { TagComponent } from './atoms/tag/tag.component';
 import { ArticleCardComponent } from './molecules/article-card/article-card.component';
 import { TagsComponent } from './molecules/tags/tags.component';
+import { ArticleCardPlaceholderComponent } from './molecules/article-card/article-card-placeholder/article-card-placeholder.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { TagsComponent } from './molecules/tags/tags.component';
     TagComponent,
     ArticleCardComponent,
     TagsComponent,
+    ArticleCardPlaceholderComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
@@ -32,6 +34,7 @@ import { TagsComponent } from './molecules/tags/tags.component';
     PageTitleComponent,
     ProjectCardComponent,
     ArticleCardComponent,
+    ArticleCardPlaceholderComponent,
   ],
 })
 export class SharedModule {}
