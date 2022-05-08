@@ -17,8 +17,6 @@
     Mes dernières publications
   </h2>
 
-  <app-article-card-placeholder></app-article-card-placeholder>
-
   <div
     *ngIf="articles$ | async as articles; else loading"
     class="flex flex-col items-center gap-5"
@@ -30,8 +28,9 @@
   </div>
 
   <ng-template #loading>
-    <span>
-      <i class="bi bi-arrow-clockwise"></i>
-    </span>
+    <div class="flex flex-col items-center gap-5 animate-pulse">
+      <app-article-card-placeholder class="w-full" *ngFor="let _ of [0, 1, 2]">
+      </app-article-card-placeholder>
+    </div>
   </ng-template>
 </div>
