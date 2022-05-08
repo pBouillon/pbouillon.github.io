@@ -9,16 +9,27 @@
       target="_blank"
       >DEV.to</a
     >
-    sur les divers sujets que ce soit lorsque je découvre une technologie,
-    lorsque je créé un projet ou simplement pour un retour d'expérience.
+    sur divers sujets que ce soit lorsque je découvre une technologie, lorsque
+    je créé un projet ou simplement pour un retour d'expérience.
   </p>
 
-  <h2 class="text-xl font-semibold md:text-2xl">Dernières publications</h2>
+  <h2 class="text-xl font-semibold text-center md:text-2xl">
+    Mes dernières publications
+  </h2>
 
-  <div class="flex flex-col items-center gap-5">
+  <div
+    *ngIf="articles$ | async as articles; else loading"
+    class="flex flex-col items-center gap-5"
+  >
     <app-article-card
-      *ngFor="let article of articles$ | async"
+      *ngFor="let article of articles"
       [article]="article"
     ></app-article-card>
   </div>
+
+  <ng-template #loading>
+    <div>
+      <app-article-card-placeholder></app-article-card-placeholder>
+    </div>
+  </ng-template>
 </div>
