@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   selector: 'app-article-card-placeholder',
   template: `
     <div
-      class="max-w-md p-5 space-y-4 bg-white border rounded shadow md:hover:scale-105 hover:cursor-pointer dark:bg-gray-600"
+      class="max-w-md mx-auto p-5 space-y-4 bg-white border rounded shadow dark:bg-gray-600"
     >
       <div class="flex justify-center">
         <span class="text-placeholder h-4 w-1/2"></span>
@@ -24,7 +24,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
       </div>
     </div>
   `,
-  styles: ['.text-placeholder { @apply block rounded bg-gray-400; }'],
+  styles: ['.text-placeholder { @apply block rounded bg-gray-400 animate-pulse; }'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ArticleCardPlaceholderComponent {}
