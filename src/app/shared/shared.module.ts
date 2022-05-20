@@ -1,40 +1,32 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { DarkModeTogglerIconComponent } from './atoms/dark-mode-toggler-icon/dark-mode-toggler-icon.component';
-import { DarkModeTogglerSelectorComponent } from './atoms/dark-mode-toggler-selector/dark-mode-toggler-selector.component';
-import { NavbarLinkComponent } from './atoms/navbar-link/navbar-link.component';
-import { PageTitleComponent } from './atoms/page-title/page-title.component';
-import { ProjectCardComponent } from './molecules/project-card/project-card.component';
-import { NavbarBlockComponent } from './molecules/navbar-block/navbar-block.component';
-import { NavbarComponent } from './molecules/navbar/navbar.component';
-import { TagComponent } from './atoms/tag/tag.component';
-import { ArticleCardComponent } from './molecules/article-card/article-card.component';
-import { TagsComponent } from './molecules/tags/tags.component';
-import { ArticleCardPlaceholderComponent } from './molecules/article-card/article-card-placeholder/article-card-placeholder.component';
+import { DarkModeTogglerIconComponent } from './navbar/dark-mode-toggler-icon/dark-mode-toggler-icon.component';
+import { DarkModeTogglerSelectorComponent } from './navbar-block/dark-mode-toggler-selector/dark-mode-toggler-selector.component';
+import { NavbarLinkComponent } from './navbar-link/navbar-link.component';
+import { TagComponent } from './tag/tag.component';
+import { CardPlaceholderComponent } from './card-placeholder/card-placeholder.component';
+import { CardComponent } from './card/card.component';
+import { NavbarBlockComponent } from './navbar-block/navbar-block.component';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    NavbarLinkComponent,
-    NavbarComponent,
-    NavbarBlockComponent,
+    CardComponent,
+    CardPlaceholderComponent,
     DarkModeTogglerIconComponent,
     DarkModeTogglerSelectorComponent,
-    PageTitleComponent,
-    ProjectCardComponent,
+    NavbarBlockComponent,
+    NavbarComponent,
+    NavbarLinkComponent,
     TagComponent,
-    ArticleCardComponent,
-    TagsComponent,
-    ArticleCardPlaceholderComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
-    NavbarComponent,
+    CardComponent,
+    CardPlaceholderComponent,
     NavbarBlockComponent,
-    PageTitleComponent,
-    ProjectCardComponent,
-    ArticleCardComponent,
-    ArticleCardPlaceholderComponent,
+    NavbarComponent,
   ],
 })
 export class SharedModule {}

@@ -1,0 +1,18 @@
+<div
+  class="flex flex-col justify-between h-full max-w-md gap-4 p-5 bg-white border rounded shadow md:hover:scale-105 hover:cursor-pointer dark:bg-gray-600"
+  (click)="navigateToTarget()"
+>
+  <div class="space-y-4">
+    <p class="text-xl font-semibold leading-relaxed tracking-wide text-center">
+      {{ title }}
+    </p>
+
+    <hr />
+
+    <p>{{ description }}</p>
+  </div>
+
+  <div class="flex flex-wrap gap-1">
+    <app-tag *ngFor="let tag of tags" [tag]="tag"> </app-tag>
+  </div>
+</div>

@@ -1,12 +1,11 @@
 <div class="mb-5 space-y-8 page-container">
   <h1 class="text-2xl font-semibold md:text-4xl">Blog</h1>
 
-  <p>
+  <p class="md:text-lg">
     Je publie occasionnellement sur
     <a
       class="underline text-sky-500"
       href="https://dev.to/pbouillon"
-      target="_blank"
       >DEV.to</a
     >
     sur divers sujets que ce soit lorsque je découvre une technologie, lorsque
@@ -21,15 +20,19 @@
     *ngIf="articles$ | async as articles; else loading"
     class="flex flex-col items-center gap-5"
   >
-    <app-article-card
+    <app-card
       *ngFor="let article of articles"
-      [article]="article"
-    ></app-article-card>
+      [title]="article.title"
+      [description]="article.description"
+      [targetUrl]="article.url"
+      [tags]="article.tags"
+    >
+    </app-card>
   </div>
 
   <ng-template #loading>
     <div>
-      <app-article-card-placeholder></app-article-card-placeholder>
+      <app-card-placeholder></app-card-placeholder>
     </div>
   </ng-template>
 </div>

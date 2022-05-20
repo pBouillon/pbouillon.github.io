@@ -1,0 +1,18 @@
+<a
+  tabindex="0"
+  role="link"
+  class="flex gap-2 border-b-2 border-transparent cursor-pointer w-fit hover:border-sky-500"
+  [title]="label"
+  (click)="navigateToUrl()"
+  [target]="isExternal ? '_blank' : '_self'"
+  (mouseenter)="isHovered = true"
+  (mouseleave)="isHovered = false"
+>
+  {{ label }}
+  <span *ngIf="isExternal">
+    <i
+      class="text-sm bi bi-box-arrow-up-right"
+      [ngClass]="isHovered ? 'text-inherit' : 'text-slate-400'"
+    ></i>
+  </span>
+</a>
