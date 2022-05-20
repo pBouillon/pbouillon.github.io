@@ -6,6 +6,7 @@ import { DevService } from 'src/app/core/services/dev.service';
 @Component({
   selector: 'app-blog',
   templateUrl: './blog.component.html',
+  styles: [':host { @apply flex-grow flex flex-col gap-8 py-8; }'],
 })
 export class BlogComponent implements OnInit {
   articles$: Observable<Article[]> = EMPTY;

@@ -43,9 +43,7 @@ export class AppComponent implements OnInit {
   showMobileNavbar = false;
 
   ngOnInit(): void {
-    const isDarkThemePreferred = window.matchMedia(
-      '(prefers-color-scheme: dark)'
-    ).matches;
+    const isDarkThemePreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const isLightThemeSet = localStorage['theme'] === 'light';
 
     if (isDarkThemePreferred && !isLightThemeSet) {

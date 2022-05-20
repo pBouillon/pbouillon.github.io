@@ -1,13 +1,9 @@
-<div class="mb-5 space-y-8 page-container">
-  <h1 class="text-2xl font-semibold md:text-4xl">Blog</h1>
+<section class="space-y-8">
+  <h1 class="mt-10 text-2xl font-semibold md:text-4xl">Blog</h1>
 
   <p class="md:text-lg">
     Je publie occasionnellement sur
-    <a
-      class="underline text-sky-500"
-      href="https://dev.to/pbouillon"
-      >DEV.to</a
-    >
+    <a class="underline text-sky-500" href="https://dev.to/pbouillon">DEV.to</a>
     sur divers sujets que ce soit lorsque je découvre une technologie, lorsque
     je créé un projet ou simplement pour un retour d'expérience.
   </p>
@@ -29,10 +25,10 @@
     >
     </app-card>
   </div>
+</section>
 
-  <ng-template #loading>
-    <div>
-      <app-card-placeholder></app-card-placeholder>
-    </div>
-  </ng-template>
-</div>
+<ng-template #loading>
+  <div>
+    <app-card-placeholder></app-card-placeholder>
+  </div>
+</ng-template>

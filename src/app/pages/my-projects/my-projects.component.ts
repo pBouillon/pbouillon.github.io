@@ -4,6 +4,7 @@ import { ProjectSummary } from 'src/app/core/models/project-summary.model';
 @Component({
   selector: 'app-my-projects',
   templateUrl: './my-projects.component.html',
+  styles: [':host { @apply flex-grow flex flex-col gap-8 py-8; }'],
 })
 export class MyProjectsComponent {
   projects: ProjectSummary[] = [
