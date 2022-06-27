@@ -1,8 +1,12 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { ProjectSummary } from 'src/app/core/models/project-summary.model';
+import { CardComponent } from 'src/app/shared/components';
 
 @Component({
+  standalone: true,
   selector: 'app-my-projects',
+  imports: [CommonModule, CardComponent],
   templateUrl: './my-projects.component.html',
   styles: [':host { @apply flex-grow flex flex-col gap-8 py-8; }'],
 })
@@ -14,7 +18,7 @@ export class MyProjectsComponent {
         Ma page personnelle, celle-la même affichée actuellement
       `,
       link: 'https://pbouillon.github.io',
-      technologies: ['Angular 13', 'TailwindCSS'],
+      technologies: ['Angular 14', 'TailwindCSS'],
     },
     {
       name: 'Locutionis',

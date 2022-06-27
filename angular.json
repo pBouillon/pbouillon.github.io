@@ -102,5 +102,7 @@
       }
     }
   },
-  "defaultProject": "pbouillon.github.io"
+  "cli": {
+    "analytics": false
+  }
 }

@@ -17,13 +17,25 @@
     class="flex flex-col items-center gap-5"
   >
     <app-card
-      *ngFor="let article of articles"
-      [title]="article.title"
+    *ngFor="let article of articles"
       [description]="article.description"
+      [createdOn]="article.published_at"
+      [title]="article.title"
       [targetUrl]="article.url"
       [tags]="article.tags"
     >
     </app-card>
+  </div>
+
+  <div class="w-full text-center">
+    <a
+      href="https://dev.to/pbouillon"
+      target="_blank"
+      class="border-b border-sky-500 text-sky-500"
+    >
+      Voir plus sur DEV.to
+      <i class="pl-1 bi bi-arrow-right"></i>
+    </a>
   </div>
 </section>
 

@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -6,9 +7,17 @@ import {
   Output,
 } from '@angular/core';
 import { NavbarLink } from 'src/app/core/models/navbar-link.model';
+import { NavbarLinkComponent } from '../navbar-link/navbar-link.component';
+import { DarkModeTogglerSelectorComponent } from './dark-mode-toggler-selector/dark-mode-toggler-selector.component';
 
 @Component({
+  standalone: true,
   selector: 'app-navbar-block',
+  imports: [
+    CommonModule,
+    DarkModeTogglerSelectorComponent,
+    NavbarLinkComponent,
+  ],
   templateUrl: './navbar-block.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
