@@ -16,7 +16,7 @@
     *ngIf="articles$ | async as articles; else loading"
     class="flex flex-col items-center gap-5"
   >
-    <app-card
+  <app-card
     *ngFor="let article of articles"
       [description]="article.description"
       [createdOn]="article.published_at"
