@@ -8,7 +8,7 @@ import {
 } from '@angular/core';
 import { NavbarLink } from 'src/app/core/models/navbar-link.model';
 import { NavbarLinkComponent } from '../navbar-link/navbar-link.component';
-import { DarkModeTogglerIconComponent } from './dark-mode-toggler-icon/dark-mode-toggler-icon.component';
+import { DarkModeTogglerIconComponent } from '../dark-mode-toggler-icon/dark-mode-toggler-icon.component';
 
 @Component({
   standalone: true,
