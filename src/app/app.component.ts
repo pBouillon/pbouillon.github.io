@@ -1,8 +1,13 @@
+import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { RouterModule } from '@angular/router';
+import { NavbarComponent, NavbarBlockComponent } from './core/components';
 import { NavbarLink } from './core/models/navbar-link.model';
 
 @Component({
+  standalone: true,
   selector: 'app-root',
+  imports: [CommonModule, RouterModule, NavbarComponent, NavbarBlockComponent],
   templateUrl: './app.component.html',
 })
 export class AppComponent implements OnInit {
@@ -43,7 +48,9 @@ export class AppComponent implements OnInit {
   showMobileNavbar = false;
 
   ngOnInit(): void {
-    const isDarkThemePreferred = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const isDarkThemePreferred = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    ).matches;
     const isLightThemeSet = localStorage['theme'] === 'light';
 
     if (isDarkThemePreferred && !isLightThemeSet) {

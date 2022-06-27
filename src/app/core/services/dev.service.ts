@@ -3,9 +3,7 @@ import { Injectable } from '@angular/core';
 import { map, Observable } from 'rxjs';
 import { Article } from '../models/article.model';
 
-@Injectable({
-  providedIn: 'root',
-})
+@Injectable()
 export class DevService {
   private readonly BASE_URL = 'https://dev.to/api';
 

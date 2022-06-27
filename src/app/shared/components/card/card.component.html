@@ -1,0 +1,32 @@
+<div
+  class="flex flex-col justify-between h-full max-w-2xl gap-4 p-5 bg-white border rounded shadow md:hover:scale-105 hover:cursor-pointer dark:bg-gray-600"
+  (click)="navigateToTarget()"
+>
+  <div class="space-y-4">
+    <div class="space-y-2">
+      <p class="text-lg font-semibold leading-relaxed tracking-wide text-center md:text-xl">
+        {{ title }}
+      </p>
+
+      <p
+        *ngIf="createdOn"
+        class="text-sm text-center text-gray-400 md:text-base"
+      >
+        <i class="bi bi-newspaper"></i>
+        Publié le {{ createdOn | date: 'mediumDate' }}
+      </p>
+    </div>
+
+    <hr />
+
+    <p class="text-center md:text-lg md:text-left">{{ description }}</p>
+  </div>
+
+  <div class="flex flex-wrap justify-center gap-1">
+    <app-tag
+      *ngFor="let tag of tags"
+      [tag]="tag"
+    >
+    </app-tag>
+  </div>
+</div>

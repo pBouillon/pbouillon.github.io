@@ -18,12 +18,14 @@ describe('DevService', () => {
         url: 'url1',
         title: 'title1',
         description: 'description1',
+        published_at: new Date(),
         tags: ['tag1', 'tag2'],
       },
       {
         url: 'url2',
         title: 'title2',
         description: 'description2',
+        published_at: new Date(),
         tags: ['tag3', 'tag4'],
       },
     ];

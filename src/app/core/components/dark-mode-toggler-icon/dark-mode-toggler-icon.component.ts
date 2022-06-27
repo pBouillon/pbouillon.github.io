@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -7,7 +8,9 @@ import {
 } from '@angular/core';
 
 @Component({
+  standalone: true,
   selector: 'app-dark-mode-toggler-icon',
+  imports: [CommonModule],
   templateUrl: './dark-mode-toggler-icon.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })

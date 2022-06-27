@@ -1,3 +1,4 @@
+import { CommonModule } from '@angular/common';
 import {
   ChangeDetectionStrategy,
   Component,
@@ -7,7 +8,9 @@ import {
 } from '@angular/core';
 
 @Component({
+  standalone: true,
   selector: 'app-dark-mode-toggler-selector',
+  imports: [CommonModule],
   templateUrl: './dark-mode-toggler-selector.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
@@ -32,8 +35,8 @@ export class DarkModeTogglerSelectorComponent {
     const theme = event.target.value;
 
     const hasValueChanged =
-      (theme === 'light' && this.isDarkModeEnabled)
-      || (theme === 'dark' && !this.isDarkModeEnabled);
+      (theme === 'light' && this.isDarkModeEnabled) ||
+      (theme === 'dark' && !this.isDarkModeEnabled);
 
     if (hasValueChanged) {
       this.onToggleDarkMode.emit();
