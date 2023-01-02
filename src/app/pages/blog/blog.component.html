@@ -16,15 +16,13 @@
     *ngIf="articles$ | async as articles; else loading"
     class="flex flex-col items-center gap-5"
   >
-  <app-card
-    *ngFor="let article of articles"
+    <app-card *ngFor="let article of articles"
       [description]="article.description"
       [createdOn]="article.published_at"
       [title]="article.title"
       [targetUrl]="article.url"
       [tags]="article.tags"
-    >
-    </app-card>
+    ></app-card>
   </div>
 
   <div class="w-full text-center">

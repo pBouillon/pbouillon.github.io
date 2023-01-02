@@ -24,8 +24,4 @@ export class CardComponent {
 
   @Input()
   title!: string;
-
-  navigateToTarget(): void {
-    window.location.href = this.targetUrl;
-  }
 }
