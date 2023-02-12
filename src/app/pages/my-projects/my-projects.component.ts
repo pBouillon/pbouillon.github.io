@@ -15,7 +15,7 @@ export class MyProjectsComponent {
     {
       name: 'Page personnelle',
       description: `
-        Ma page personnelle, celle-la même affichée actuellement
+        Ma page personnelle actuellement affichée sur votre écran
       `,
       link: 'https://pbouillon.github.io',
       technologies: ['Angular 14', 'TailwindCSS'],
@@ -32,9 +32,7 @@ export class MyProjectsComponent {
     {
       name: 'Locutionis API',
       description: `
-        Projet destiné à parcourir l'écosystème Java Spring au travers d'une API
-        REST mettant en œuvre des principes de CQRS et de l'architecture
-        hexagonale
+        Minimal API RESTful servant de backend à Locutionis.
       `,
       link: 'https://github.com/pBouillon/Locutionis.Api',
       technologies: ['.NET 7', 'C# 11'],
