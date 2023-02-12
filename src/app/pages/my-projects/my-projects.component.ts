@@ -27,17 +27,17 @@ export class MyProjectsComponent {
         leurs définitions et usages.
       `,
       link: 'https://locutionis.vercel.app',
-      technologies: ['Svelte', 'SvelteKit', 'TailwindCSS'],
+      technologies: ['Angular 15', 'NgRx', 'TailwindCSS'],
     },
     {
-      name: 'TODO List',
+      name: 'Locutionis API',
       description: `
         Projet destiné à parcourir l'écosystème Java Spring au travers d'une API
         REST mettant en œuvre des principes de CQRS et de l'architecture
         hexagonale
       `,
-      link: 'https://github.com/pBouillon/todo-list',
-      technologies: ['Spring Boot', 'Java 11', 'MapStruct', 'Lombok', 'docker'],
+      link: 'https://github.com/pBouillon/Locutionis.Api',
+      technologies: ['.NET 7', 'C# 11'],
     },
     {
       name: 'MqttTopicBuilder',
