@@ -15,10 +15,19 @@ export class MyProjectsComponent {
     {
       name: 'Page personnelle',
       description: `
-        Ma page personnelle actuellement affichée sur votre écran
+        Ma page personnelle actuellement affichée sur votre écran.
       `,
       link: 'https://pbouillon.github.io',
-      technologies: ['Angular 14', 'TailwindCSS'],
+      technologies: ['Angular 16', 'TailwindCSS'],
+    },
+    {
+      name: 'ngx-flagr',
+      description: `
+        Librairie NPM pour Angular visant à simplifier l'usage et l'utilisation
+        des feature flags.
+      `,
+      link: 'https://pbouillon.github.io/ngx-flagr',
+      technologies: ['Angular 16', 'Docusaurus'],
     },
     {
       name: 'Locutionis',
@@ -32,7 +41,7 @@ export class MyProjectsComponent {
     {
       name: 'Locutionis API',
       description: `
-        Minimal API RESTful servant de backend à Locutionis.
+        RESTful Minimal API servant de backend à Locutionis.
       `,
       link: 'https://github.com/pBouillon/Locutionis.Api',
       technologies: ['.NET 7', 'C# 11'],
@@ -41,36 +50,10 @@ export class MyProjectsComponent {
       name: 'MqttTopicBuilder',
       description: `
         NuGet destiné à simplifier la création de topics MQTT en s'assurant de
-        leur validité en fournissant une API orientée objets et non primitives
+        leur validité en fournissant une API orientée objets et non primitives.
       `,
       link: 'https://nuget.org/packages/MqttTopicBuilder/',
       technologies: ['.NET Standard 2.0', 'C# 8.0'],
-    },
-    {
-      name: 'Moving List',
-      description: `
-        Listing des objets proposés à la vente ou à la donation d'objets dans le
-        cadre d'un déménagement permettant de gérer et de diffuser soi-même les
-        offres
-      `,
-      link: 'https://pbouillon.github.io/moving-list',
-      technologies: ['Angular 12', 'Bootstrap'],
-    },
-    {
-      name: 'InTechNet',
-      description: `
-        Plateforme de classes virtuelles proposant des activités ludiques et
-        interactives sur le thème du numérique à destination des jeunes
-        adolescents.
-      `,
-      link: 'https://github.com/pBouillon?tab=repositories&q=intechnet',
-      technologies: [
-        '.NET Core 3.1',
-        'C# 8.0',
-        'Angular 9',
-        'Bootstrap',
-        'Python',
-      ],
     },
   ];
 }
