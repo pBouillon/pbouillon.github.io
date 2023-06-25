@@ -1,6 +1,25 @@
 <script lang="ts">
   import ThemeTogglerButton from './theme-toggler-button.svelte';
   import ThemeTogglerSelect from './theme-toggler-select.svelte';
+
+  type NavbarLinks = {
+    title: string;
+    href: string;
+    isExternal?: boolean;
+  };
+
+  const navbarLinks: NavbarLinks[] = [
+    {
+      title: 'LinkedIn',
+      href: 'https://linkedin.com/in/pierre-bouillon',
+      isExternal: true,
+    },
+    {
+      title: 'GitHub',
+      href: 'https://github.com/pbouillon',
+      isExternal: true,
+    },
+  ];
 </script>
 
 <div class="drawer drawer-end absolute">
@@ -24,18 +43,18 @@
 
       <!-- Navigation Items -->
       <nav class="hidden flex-none lg:block">
+        <!-- Navbar menu content here -->
         <ul class="menu menu-horizontal menu-lg">
-          <!-- Navbar menu content here -->
-          <li>
-            <a href="https://linkedin.com/in/pierre-bouillon" target="_blank"
-              >LinkedIn <i class="bi bi-box-arrow-up-right" /></a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/pbouillon" target="_blank"
-              >GitHub <i class="bi bi-box-arrow-up-right" /></a
-            >
-          </li>
+          {#each navbarLinks as { href, title, isExternal }}
+            <li>
+              <a {href} target={isExternal ? '_blank' : 'self'}
+                >{title}
+                {#if isExternal}
+                  <i class="bi bi-box-arrow-up-right" />
+                {/if}</a
+              >
+            </li>
+          {/each}
           <li><ThemeTogglerButton /></li>
         </ul>
       </nav>
@@ -46,16 +65,16 @@
   <nav class="drawer-side z-50">
     <label for="navbar-drawer" class="drawer-overlay" />
     <ul class="menu menu-lg h-full w-80 bg-base-100 p-4">
-      <li>
-        <a href="https://linkedin.com/in/pierre-bouillon" target="_blank"
-          >LinkedIn <i class="bi bi-box-arrow-up-right" /></a
-        >
-      </li>
-      <li>
-        <a href="https://github.com/pbouillon" target="_blank"
-          >GitHub <i class="bi bi-box-arrow-up-right" /></a
-        >
-      </li>
+      {#each navbarLinks as { href, title, isExternal }}
+        <li>
+          <a {href} target={isExternal ? '_blank' : 'self'}
+            >{title}
+            {#if isExternal}
+              <i class="bi bi-box-arrow-up-right" />
+            {/if}</a
+          >
+        </li>
+      {/each}
       <li><ThemeTogglerSelect /></li>
     </ul>
   </nav>
