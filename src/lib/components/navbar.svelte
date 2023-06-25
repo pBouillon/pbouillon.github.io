@@ -51,7 +51,7 @@
         <!-- Navbar menu content here -->
         <ul class="menu menu-horizontal menu-lg">
           {#each navbarLinks as navbarLink}
-            <NavbarLink {...navbarLink} />
+            <li><NavbarLink {...navbarLink} /></li>
           {/each}
           <li><ThemeTogglerButton /></li>
         </ul>
@@ -64,7 +64,7 @@
     <label for="navbar-drawer" class="drawer-overlay" />
     <ul class="menu menu-lg h-full w-80 bg-base-100 p-4">
       {#each navbarLinks as navbarLink}
-        <NavbarLink {...navbarLink} />
+        <li><NavbarLink {...navbarLink} /></li>
       {/each}
       <li><ThemeTogglerSelect /></li>
     </ul>
