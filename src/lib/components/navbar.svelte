@@ -17,7 +17,13 @@
 
 			<!-- Navigation Items -->
 			<nav class="hidden flex-none lg:block">
-				<ul class="menu menu-horizontal text-xl">
+				<ul class="menu menu-horizontal menu-lg">
+					<!-- Navbar menu content here -->
+					<li>
+						<a href="https://linkedin.com/in/pierre-bouillon" target="_blank"
+							>LinkedIn <i class="bi bi-box-arrow-up-right" /></a
+						>
+					</li>
 					<li>
 						<a href="https://github.com/pbouillon" target="_blank"
 							>GitHub <i class="bi bi-box-arrow-up-right" /></a
@@ -31,8 +37,11 @@
 	<!-- Sidebar Content -->
 	<nav class="drawer-side">
 		<label for="navbar-drawer" class="drawer-overlay" />
-		<ul class="menu h-full w-80 bg-base-200 p-4 text-xl">
+		<ul class="menu menu-md h-full w-80 bg-base-200 p-4">
 			<li>
+				<a href="https://linkedin.com/in/pierre-bouillon" target="_blank"
+					>LinkedIn <i class="bi bi-box-arrow-up-right" /></a
+				>
 				<a href="https://github.com/pbouillon" target="_blank"
 					>GitHub <i class="bi bi-box-arrow-up-right" /></a
 				>
