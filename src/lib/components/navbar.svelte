@@ -1,14 +1,19 @@
 <script lang="ts">
+  import NavbarLink from './navbar-link.svelte';
   import ThemeTogglerButton from './theme-toggler-button.svelte';
   import ThemeTogglerSelect from './theme-toggler-select.svelte';
 
-  type NavbarLinks = {
+  type NavbarLink = {
     title: string;
     href: string;
     isExternal?: boolean;
   };
 
-  const navbarLinks: NavbarLinks[] = [
+  const navbarLinks: NavbarLink[] = [
+    {
+      title: 'Blog',
+      href: 'blog',
+    },
     {
       title: 'LinkedIn',
       href: 'https://linkedin.com/in/pierre-bouillon',
@@ -45,15 +50,8 @@
       <nav class="hidden flex-none lg:block">
         <!-- Navbar menu content here -->
         <ul class="menu menu-horizontal menu-lg">
-          {#each navbarLinks as { href, title, isExternal }}
-            <li>
-              <a {href} target={isExternal ? '_blank' : 'self'}
-                >{title}
-                {#if isExternal}
-                  <i class="bi bi-box-arrow-up-right" />
-                {/if}</a
-              >
-            </li>
+          {#each navbarLinks as navbarLink}
+            <NavbarLink {...navbarLink} />
           {/each}
           <li><ThemeTogglerButton /></li>
         </ul>
@@ -65,15 +63,8 @@
   <nav class="drawer-side z-50">
     <label for="navbar-drawer" class="drawer-overlay" />
     <ul class="menu menu-lg h-full w-80 bg-base-100 p-4">
-      {#each navbarLinks as { href, title, isExternal }}
-        <li>
-          <a {href} target={isExternal ? '_blank' : 'self'}
-            >{title}
-            {#if isExternal}
-              <i class="bi bi-box-arrow-up-right" />
-            {/if}</a
-          >
-        </li>
+      {#each navbarLinks as navbarLink}
+        <NavbarLink {...navbarLink} />
       {/each}
       <li><ThemeTogglerSelect /></li>
     </ul>
