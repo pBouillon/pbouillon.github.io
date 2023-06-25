@@ -2,6 +2,8 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
 
+  important: true,
+
   plugins: [require('@tailwindcss/typography'), require('daisyui')],
 
   daisyui: {
