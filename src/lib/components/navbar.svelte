@@ -12,7 +12,7 @@
   const navbarLinks: NavbarLink[] = [
     {
       title: 'Blog',
-      href: 'blog',
+      href: '/blog',
     },
     {
       title: 'LinkedIn',
