@@ -1,10 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./src/**/*.{html,js,svelte,ts}'],
+  content: ['./src/**/*.{html,js,svelte,ts}'],
 
-	plugins: [require('daisyui')],
+  plugins: [require('daisyui')],
 
-	daisyui: {
-		themes: ['corporate', 'night']
-	}
+  daisyui: {
+    themes: ['corporate', 'night'],
+    darkTheme: 'night',
+    logs: false,
+  },
 };
