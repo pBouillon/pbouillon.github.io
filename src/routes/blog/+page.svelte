@@ -1,17 +1,17 @@
 <script lang="ts">
   import { onMount } from 'svelte';
 
-  import { getArticles, type Article } from './dev-articles';
-  import type { Writable } from 'svelte/store';
-  import DevArticle from './dev-article.svelte';
   import Page from '$lib/layouts/page.svelte';
+
+  import DevArticle from './dev-article.svelte';
+  import { getArticles, type Article } from './dev-articles';
 
   const articlesPerPage = 10;
 
-  let articles: Writable<Article[]> | undefined = undefined;
+  let loadingArticles: Promise<Article[]> | undefined;
 
   onMount(() => {
-    articles = getArticles(articlesPerPage);
+    loadingArticles = getArticles(articlesPerPage);
   });
 </script>
 
@@ -31,10 +31,16 @@
   </p>
 </Page>
 
-<div
-  class="mx-auto grid max-w-4xl grid-cols-1 justify-items-center lg:grid-cols-2"
->
-  {#each $articles || [] as article}
-    <DevArticle {article} />
-  {/each}
-</div>
+{#await loadingArticles}
+  <!-- TODO - Loading -->
+{:then articles}
+  <div
+    class="mx-auto grid max-w-4xl grid-cols-1 justify-items-center lg:grid-cols-2"
+  >
+    {#each articles || [] as article}
+      <DevArticle {article} />
+    {/each}
+  </div>
+{:catch error}
+  <!-- TODO - Error -->
+{/await}

@@ -1,46 +1,46 @@
-import { writable } from 'svelte/store';
-import type { Writable } from 'svelte/store';
-
-interface DevArticle {
+type DevArticle = {
   cover_image: string;
   description: string;
   published_at: Date;
-  tag_list: string;
+  tag_list: string[];
   title: string;
   url: string;
-}
+};
 
-export interface Article {
+export type Article = {
   coverImage: string;
   description: string;
   publishedAt: Date;
-  tags: string;
+  tags: string[];
   title: string;
   url: string;
-}
+};
 
 const BASE_URL = 'https://dev.to/api';
 
+/**
+ * Converts a DevArticle object to an Article object.
+ * @param {DevArticle} article - The DevArticle object to convert.
+ * @returns {Article} - The converted Article object.
+ */
 const toArticle = (article: DevArticle): Article => ({
   ...article,
-  tags: article.tag_list,
+  tags: article.tag_list.sort().map((tag) => `#${tag}`),
   coverImage: article.cover_image,
   publishedAt: article.published_at,
 });
 
-export function getArticles(perPage: number): Writable<Article[]> {
-  const articles: Writable<Article[]> = writable([]);
+/**
+ * Retrieves a list of articles from the Dev.to API
+ * @param {number} perPage - The number of articles to retrieve per page
+ * @returns {Promise<Article[]>} - A Promise that resolves to an array of Article objects
+ */
+export async function getArticles(perPage: number): Promise<Article[]> {
+  const response = await fetch(
+    `${BASE_URL}/articles?username=pbouillon&per_page=${perPage}`
+  );
 
-  fetch(`${BASE_URL}/articles?username=pbouillon&per_page=${perPage}`)
-    .then((response) => response.json())
-    .then((articlesData: DevArticle[]) => {
-      const mappedArticles = articlesData.map(toArticle);
-      articles.set(mappedArticles);
-    })
-    .catch((error) => {
-      console.error('Error retrieving articles: ', error);
-      articles.set([]);
-    });
+  const devArticles = await response.json();
 
-  return articles;
+  return devArticles.map(toArticle);
 }
