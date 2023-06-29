@@ -1,8 +1,14 @@
-module.exports = {
-  content: ["./src/**/*.{html,ts}"],
-  darkMode: 'class',
-  theme: {
-    extend: {},
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./src/**/*.{html,js,svelte,ts}'],
+
+  important: true,
+
+  plugins: [require('@tailwindcss/typography'), require('daisyui')],
+
+  daisyui: {
+    themes: ['corporate', 'night'],
+    darkTheme: 'night',
+    logs: false,
   },
-  plugins: [],
 };
