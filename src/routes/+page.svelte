@@ -23,6 +23,10 @@
   ];
 </script>
 
+<svelte:head>
+  <title>Pierre Bouillon | Homepage</title>
+</svelte:head>
+
 <div class="hero min-h-screen">
   <div class="hero-content text-center">
     <section class="max-w-md">

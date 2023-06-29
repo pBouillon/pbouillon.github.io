@@ -15,6 +15,10 @@
   });
 </script>
 
+<svelte:head>
+  <title>Pierre Bouillon | Blog</title>
+</svelte:head>
+
 <Page>
   <h1>Blog</h1>
 
