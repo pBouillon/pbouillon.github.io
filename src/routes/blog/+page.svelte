@@ -55,6 +55,8 @@
       <DevArticle {article} />
     {/each}
   </div>
+
+  <ReadOnDevLink />
 {:catch}
   <p
     class="prose mx-auto text-center text-sm text-secondary lg:prose-xl lg:text-base"
@@ -62,5 +64,3 @@
     Impossible de charger les articles pour le moment
   </p>
 {/await}
-
-<ReadOnDevLink />
