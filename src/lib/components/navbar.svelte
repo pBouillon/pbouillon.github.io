@@ -49,7 +49,7 @@
       <!-- Navigation Items -->
       <nav class="hidden flex-none lg:block">
         <!-- Navbar menu content here -->
-        <ul class="menu menu-horizontal menu-lg">
+        <ul class="menu menu-horizontal menu-lg gap-3">
           {#each navbarLinks as navbarLink}
             <li><NavbarLink {...navbarLink} /></li>
           {/each}
