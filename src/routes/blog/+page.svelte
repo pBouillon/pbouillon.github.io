@@ -33,6 +33,14 @@
     N'hésitez pas à y jeter un œil et y laisser commentaires et suggestions. Je
     serai ravis de partager mes connaissances et d'échanger avec vous.
   </p>
+
+  <a
+    href="https://dev.to/pbouillon"
+    class="btn-primary btn mx-auto my-5 w-56 hover:scale-105 md:w-80"
+  >
+    Voir sur DEV.to
+    <i class="bi bi-arrow-right" />
+  </a>
 </Page>
 
 {#await loadingArticles}
@@ -45,6 +53,10 @@
       <DevArticle {article} />
     {/each}
   </div>
-{:catch error}
-  <!-- TODO - Error -->
+{:catch}
+  <p
+    class="prose mx-auto text-center text-sm text-secondary lg:prose-xl lg:text-base"
+  >
+    Impossible de charger les articles pour le moment
+  </p>
 {/await}
