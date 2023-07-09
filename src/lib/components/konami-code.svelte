@@ -14,7 +14,6 @@
     unsubscribe = isKonamiCodePressed.subscribe(
       (isKonamiCodePressed: boolean): void => {
         if (!isKonamiCodePressed) return;
-        console.log('yay');
 
         jsConfetti.addConfetti({
           emojis: ['🦄', '✨'],
