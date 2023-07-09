@@ -1,4 +1,4 @@
-<div class="my-5 flex justify-center">
+<div class="my-12 flex justify-center">
   <a
     href="https://dev.to/pbouillon"
     class="btn-primary btn hover:scale-105 md:w-80"
