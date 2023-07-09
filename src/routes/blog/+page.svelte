@@ -5,9 +5,11 @@
 
   import DevArticle from './dev-article.svelte';
   import LoadingDevArticle from './loading-dev-article.svelte';
+  import ReadOnDevLink from './read-on-dev-link.svelte';
+
   import { getArticles, type Article } from './dev-articles';
 
-  const articlesPerPage = 10;
+  const articlesPerPage = 6;
 
   let loadingArticles: Promise<Article[]> | undefined;
 
@@ -34,15 +36,9 @@
     N'hésitez pas à y jeter un œil et y laisser commentaires et suggestions. Je
     serai ravis de partager mes connaissances et d'échanger avec vous.
   </p>
-
-  <a
-    href="https://dev.to/pbouillon"
-    class="btn-primary btn mx-auto my-5 w-56 hover:scale-105 md:w-80"
-  >
-    Voir sur DEV.to
-    <i class="bi bi-arrow-right" />
-  </a>
 </Page>
+
+<ReadOnDevLink />
 
 {#await loadingArticles}
   <div
@@ -66,3 +62,5 @@
     Impossible de charger les articles pour le moment
   </p>
 {/await}
+
+<ReadOnDevLink />
