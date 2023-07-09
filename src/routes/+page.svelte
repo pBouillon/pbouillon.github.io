@@ -30,6 +30,11 @@
 <div class="hero min-h-screen">
   <div class="hero-content text-center">
     <section class="max-w-md">
+      <img
+        src="me.jpg"
+        class="mx-auto my-12 h-52 w-52 rounded-full shadow"
+        alt="Profile"
+      />
       <h1 class="text-5xl font-bold">Pierre Bouillon</h1>
       <p class="py-6 text-2xl">Ingénieur logiciel Full Stack</p>
 
