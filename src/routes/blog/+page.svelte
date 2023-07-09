@@ -4,6 +4,7 @@
   import Page from '$lib/layouts/page.svelte';
 
   import DevArticle from './dev-article.svelte';
+  import LoadingDevArticle from './loading-dev-article.svelte';
   import { getArticles, type Article } from './dev-articles';
 
   const articlesPerPage = 10;
@@ -44,7 +45,12 @@
 </Page>
 
 {#await loadingArticles}
-  <!-- TODO - Loading -->
+  <div
+    class="mx-auto grid max-w-4xl grid-cols-1 justify-items-center lg:grid-cols-2"
+  >
+    <LoadingDevArticle />
+    <LoadingDevArticle />
+  </div>
 {:then articles}
   <div
     class="mx-auto grid max-w-4xl grid-cols-1 justify-items-center lg:grid-cols-2"
