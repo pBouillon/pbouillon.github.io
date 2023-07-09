@@ -7,14 +7,14 @@
 
   onMount(() => {
     const preferredTheme = localStorage.getItem('theme');
-    const isDarkThemePreferred = preferredTheme === 'night';
+    const isDarkThemePreferred = preferredTheme === 'dark';
 
     isDarkThemeSet.set(isDarkThemePreferred);
   });
 </script>
 
 <button
-  data-toggle-theme="corporate,night"
+  data-toggle-theme="corporate,dark"
   data-act-class="ACTIVECLASS"
   type="button"
   class="btn-ghost btn-square btn"
