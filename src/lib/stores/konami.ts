@@ -22,25 +22,30 @@ const konamiCode: KeyCode[] = [
 ];
 
 const keyMap: Record<string, KeyCode> = {
-  arrowup: 'ArrowUp',
-  arrowdown: 'ArrowDown',
-  arrowleft: 'ArrowLeft',
-  arrowright: 'ArrowRight',
-  b: 'KeyB',
+  ArrowUp: 'ArrowUp',
+  ArrowDown: 'ArrowDown',
+  ArrowLeft: 'ArrowLeft',
+  ArrowRight: 'ArrowRight',
   a: 'KeyA',
+  b: 'KeyB',
+  A: 'KeyA',
+  B: 'KeyB',
 };
 
-const arraysEqual = (a: KeyCode[], b: KeyCode[]): boolean => {
+const arraysEqual = (
+  a: (KeyCode | undefined)[],
+  b: (KeyCode | undefined)[]
+): boolean => {
   return JSON.stringify(a) === JSON.stringify(b);
 };
 
 const lastKeyPressed = readable(
-  new Array<KeyCode>(),
+  new Array<KeyCode | undefined>(),
   function initialize(_set, update) {
     const handleKeyDown = (event: KeyboardEvent): void => {
-      const keyPressed = keyMap[event.key.toLowerCase()];
+      const keyPressed = keyMap[event.key];
 
-      update((currentSequence: KeyCode[]) => {
+      update((currentSequence: (KeyCode | undefined)[]) => {
         const next = currentSequence.concat(keyPressed);
 
         if (next.length > konamiCode.length) {
@@ -61,7 +66,7 @@ const lastKeyPressed = readable(
 
 export const isKonamiCodePressed: Readable<boolean> = derived(
   lastKeyPressed,
-  ($pressedKeys: KeyCode[]) => {
+  ($pressedKeys: (KeyCode | undefined)[]) => {
     const hasKonamiCodeBeenEntered = arraysEqual($pressedKeys, konamiCode);
     return hasKonamiCodeBeenEntered;
   }
