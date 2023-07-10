@@ -1,10 +1,10 @@
 <script lang="ts">
-  import { onMount, onDestroy } from 'svelte';
+  import { onDestroy, onMount } from 'svelte';
+  import type { Unsubscriber } from 'svelte/store';
 
   import JSConfetti from 'js-confetti';
 
   import { isKonamiCodePressed } from '$lib/stores/konami';
-  import type { Unsubscriber } from 'svelte/store';
 
   let unsubscribe: Unsubscriber = () => {};
 
@@ -17,7 +17,7 @@
 
         jsConfetti.addConfetti({
           emojis: ['🦄', '✨'],
-          confettiNumber: 30,
+          confettiNumber: 50,
         });
       }
     );
