@@ -43,8 +43,11 @@ const lastKeyPressed = readable(
       update((currentSequence: KeyCode[]) => {
         const next = currentSequence.concat(keyPressed);
 
-        const isSequenceTooLong = next.length > konamiCode.length;
-        return isSequenceTooLong ? next.splice(0, 1) : next;
+        if (next.length > konamiCode.length) {
+          next.splice(0, 1);
+        }
+
+        return next;
       });
     };
 
