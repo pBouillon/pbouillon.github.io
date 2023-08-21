@@ -34,14 +34,14 @@
   <div class="drawer-content flex flex-col">
     <div class="navbar bg-base-100">
       <div class="flex-1">
-        <a href="/" class="btn-ghost btn text-2xl normal-case lg:text-3xl"
+        <a href="/" class="btn btn-ghost text-2xl normal-case lg:text-3xl"
           >Pierre Bouillon</a
         >
       </div>
 
       <!-- Sidebar Toggle -->
       <div class="flex-none lg:hidden">
-        <label for="navbar-drawer" class="btn-ghost btn-square btn">
+        <label for="navbar-drawer" class="btn btn-square btn-ghost">
           <i class="bi bi-list text-2xl" />
         </label>
       </div>

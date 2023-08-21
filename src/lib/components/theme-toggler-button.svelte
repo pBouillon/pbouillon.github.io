@@ -17,7 +17,7 @@
   data-toggle-theme="corporate,dark"
   data-act-class="ACTIVECLASS"
   type="button"
-  class="btn-ghost btn-square btn"
+  class="btn btn-square btn-ghost"
   on:click={() => isDarkThemeSet.update((isSet) => !isSet)}
 >
   <i class="bi bi-moon {themeIcon}" />

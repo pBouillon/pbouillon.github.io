@@ -24,7 +24,7 @@
     <p>{article.description}</p>
 
     <div class="card-actions justify-end pt-3">
-      <a href={article.url} target="_blank" class="btn-primary btn"
+      <a href={article.url} target="_blank" class="btn btn-primary"
         >Lire l'article</a
       >
     </div>

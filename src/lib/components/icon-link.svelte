@@ -7,7 +7,7 @@
 <a
   {href}
   {target}
-  class="btn-ghost btn-square btn text-3xl lg:btn-lg lg:text-5xl"
+  class="btn btn-square btn-ghost text-3xl lg:btn-lg lg:text-5xl"
 >
   <i class="bi {iconName}" />
 </a>
