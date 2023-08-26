@@ -1,5 +1,6 @@
 <script lang="ts">
   import LazyLoadedImage from '$lib/components/lazy-loaded-image.svelte';
+  import { t } from '$lib/translations';
   import type { Article } from './dev-articles';
 
   export let article: Article;
@@ -25,7 +26,7 @@
 
     <div class="card-actions justify-end pt-3">
       <a href={article.url} target="_blank" class="btn btn-primary"
-        >Lire l'article</a
+        >{$t('blog.read_article')}</a
       >
     </div>
   </div>
