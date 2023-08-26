@@ -1,0 +1,15 @@
+{
+  "home": {
+    "tab_title": "Pierre Bouillon | Accueil",
+    "title": "Pierre Bouillon",
+    "introduction": "Ingénieur Logiciel Full Stack"
+  },
+  "blog": {
+    "tab_title": "Pierre Bouillon | Blog",
+    "title": "Blog",
+    "content": "Voici un résumé des articles que j'écris périodiquement sur la plateforme DEV où je partage mes réflexions, découvertes et retours d'expériences. N'hésitez pas à y jeter un œil et y laisser commentaires et suggestions !",
+    "loading_failed": "Impossible de charger les articles pour le moment",
+    "read_article": "Lire l'article",
+    "see_all": "Voir tous les articles sur DEV"
+  }
+}
