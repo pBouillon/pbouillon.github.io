@@ -1,4 +1,10 @@
 {
+  "navbar": {
+    "themes": {
+      "light": "Clair",
+      "dark": "Sombre"
+    }
+  },
   "home": {
     "tab_title": "Pierre Bouillon | Accueil",
     "title": "Pierre Bouillon",

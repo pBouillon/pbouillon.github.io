@@ -14,7 +14,7 @@
 </script>
 
 <select
-  class="select w-full lg:w-36"
+  class="select select-ghost w-full lg:w-36"
   bind:value={selectedLocale}
   on:change={() => setLocale(selectedLocale)}
 >
