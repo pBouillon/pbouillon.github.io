@@ -1,7 +1,7 @@
 import i18n, { type Config } from 'sveltekit-i18n';
 
 const config: Config<unknown> = {
-  initLocale: 'en',
+  initLocale: 'fr',
   loaders: [
     {
       locale: 'en',
@@ -14,6 +14,7 @@ const config: Config<unknown> = {
       loader: async () => (await import('./lang/fr.json')).default,
     },
   ],
+  fallbackLocale: 'fr',
 };
 
 export const {
@@ -22,6 +23,7 @@ export const {
   locales,
   locale,
   initialized,
-  translations,
   loadTranslations,
+  setLocale,
+  translations,
 } = new i18n(config);

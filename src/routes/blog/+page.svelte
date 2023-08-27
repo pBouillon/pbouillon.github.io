@@ -24,10 +24,8 @@
 
 <Page>
   <h1>{$t('blog.title')}</h1>
-  <p>${$t('blog.content')}</p>
+  <p>{$t('blog.content')}</p>
 </Page>
-
-<ReadOnDevLink />
 
 {#await loadingArticles}
   <div
