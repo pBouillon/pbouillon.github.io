@@ -1,4 +1,6 @@
 <script lang="ts">
+  import { t } from '$lib/translations';
+
   import IconLink from '$lib/components/icon-link.svelte';
 
   type HeroLink = {
@@ -24,7 +26,7 @@
 </script>
 
 <svelte:head>
-  <title>Pierre Bouillon | Homepage</title>
+  <title>{$t('home.tab_title')}</title>
 </svelte:head>
 
 <div class="hero min-h-screen">
@@ -35,8 +37,8 @@
         class="mx-auto my-12 h-52 w-52 rounded-full shadow"
         alt="Profile"
       />
-      <h1 class="text-5xl font-bold">Pierre Bouillon</h1>
-      <p class="py-6 text-2xl">Ingénieur logiciel Full Stack</p>
+      <h1 class="text-5xl font-bold">{$t('home.title')}</h1>
+      <p class="py-6 text-2xl">{$t('home.introduction')}</p>
 
       <div class="divider" />
 

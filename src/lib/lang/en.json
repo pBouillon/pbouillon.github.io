@@ -1,0 +1,21 @@
+{
+  "navbar": {
+    "themes": {
+      "light": "Light",
+      "dark": "Dark"
+    }
+  },
+  "home": {
+    "tab_title": "Pierre Bouillon | Homepage",
+    "title": "Pierre Bouillon",
+    "introduction": "Full Stack Software Engineer"
+  },
+  "blog": {
+    "tab_title": "Pierre Bouillon | Blog",
+    "title": "Blog",
+    "content": "Here is a summary of the articles I write periodically on the DEV platform where I share my thoughts, discoveries and feedback. Feel free to take a look and leave comments and suggestions!",
+    "loading_failed": "Unable to load the articles for now",
+    "read_article": "Read the article",
+    "see_all": "See more on DEV"
+  }
+}

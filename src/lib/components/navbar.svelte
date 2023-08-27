@@ -1,4 +1,5 @@
 <script lang="ts">
+  import LanguageSelector from './language-selector.svelte';
   import NavbarLink from './navbar-link.svelte';
   import ThemeTogglerButton from './theme-toggler-button.svelte';
   import ThemeTogglerSelect from './theme-toggler-select.svelte';
@@ -53,6 +54,7 @@
           {#each navbarLinks as navbarLink}
             <li><NavbarLink {...navbarLink} /></li>
           {/each}
+          <li><LanguageSelector /></li>
           <li><ThemeTogglerButton /></li>
         </ul>
       </nav>
@@ -66,6 +68,8 @@
       {#each navbarLinks as navbarLink}
         <li><NavbarLink {...navbarLink} /></li>
       {/each}
+      <li><span class="divider pointer-events-none" /></li>
+      <li><LanguageSelector /></li>
       <li><ThemeTogglerSelect /></li>
     </ul>
   </nav>

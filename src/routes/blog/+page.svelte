@@ -1,12 +1,12 @@
 <script lang="ts">
   import { onMount } from 'svelte';
 
+  import { t } from '$lib/translations';
   import Page from '$lib/layouts/page.svelte';
 
   import DevArticle from './dev-article.svelte';
   import LoadingDevArticle from './loading-dev-article.svelte';
   import ReadOnDevLink from './read-on-dev-link.svelte';
-
   import { getArticles, type Article } from './dev-articles';
 
   const articlesPerPage = 6;
@@ -19,26 +19,13 @@
 </script>
 
 <svelte:head>
-  <title>Pierre Bouillon | Blog</title>
+  <title>{$t('blog.tab_title')}</title>
 </svelte:head>
 
 <Page>
-  <h1>Blog</h1>
-
-  <p>
-    Voici un résumé des articles que j'écris périodiquement sur la plateforme <a
-      href="https://dev.to/pbouillon"
-      target="_blank">DEV</a
-    > où je partage mes réflexions, découvertes et retours d'expérience.
-  </p>
-
-  <p>
-    N'hésitez pas à y jeter un œil et y laisser commentaires et suggestions. Je
-    serai ravis de partager mes connaissances et d'échanger avec vous.
-  </p>
+  <h1>{$t('blog.title')}</h1>
+  <p>{$t('blog.content')}</p>
 </Page>
-
-<ReadOnDevLink />
 
 {#await loadingArticles}
   <div
@@ -61,6 +48,6 @@
   <p
     class="prose mx-auto text-center text-sm text-secondary lg:prose-xl lg:text-base"
   >
-    Impossible de charger les articles pour le moment
+    {$t('blog.loading_failed')}
   </p>
 {/await}
