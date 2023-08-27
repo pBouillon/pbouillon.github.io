@@ -68,6 +68,7 @@
       {#each navbarLinks as navbarLink}
         <li><NavbarLink {...navbarLink} /></li>
       {/each}
+      <li><span class="divider pointer-events-none" /></li>
       <li><LanguageSelector /></li>
       <li><ThemeTogglerSelect /></li>
     </ul>
