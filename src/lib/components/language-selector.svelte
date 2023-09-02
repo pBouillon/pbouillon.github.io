@@ -11,12 +11,18 @@
   ];
 
   onMount(() => (selectedLocale = $locale));
+
+  async function updateLocale(locale: string): Promise<void> {
+    await setLocale(locale)?.then(() =>
+      localStorage?.setItem('preferredLocale', locale)
+    );
+  }
 </script>
 
 <select
   class="select select-ghost w-full lg:w-36"
   bind:value={selectedLocale}
-  on:change={() => setLocale(selectedLocale)}
+  on:change={() => updateLocale(selectedLocale)}
 >
   {#each locales as { value, name }}
     <option {value} selected={$locale === value}>{name}</option>

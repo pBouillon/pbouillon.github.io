@@ -15,7 +15,7 @@ export const load: LayoutLoad = async ({ url }) => {
 };
 
 function getInitialLocale(): string {
-  if (!browser) return 'en';
+  if (!browser) return 'fr';
 
   try {
     return window.navigator.language.split('-')[0];
