@@ -6,9 +6,7 @@
   export let article: Article;
 </script>
 
-<article
-  class="card my-5 w-96 bg-base-100 shadow-xl hover:ring hover:ring-primary-focus"
->
+<article class="card my-5 w-96 rounded-lg border border-primary shadow-xl">
   <figure>
     <LazyLoadedImage src={article.coverImage} alt={article.title} />
   </figure>
@@ -26,7 +24,7 @@
 
     <div class="card-actions justify-end pt-3">
       <a href={article.url} target="_blank" class="btn btn-primary"
-        >{$t('blog.read_article')}</a
+        >{$t('blog.read_article')} <i class="bi bi-arrow-right" /></a
       >
     </div>
   </div>

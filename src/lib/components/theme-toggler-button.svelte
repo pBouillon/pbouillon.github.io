@@ -14,7 +14,7 @@
 </script>
 
 <button
-  data-toggle-theme="corporate,dark"
+  data-toggle-theme="winter,dark"
   data-act-class="ACTIVECLASS"
   type="button"
   class="btn btn-square btn-ghost"
