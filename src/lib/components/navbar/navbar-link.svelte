@@ -1,5 +1,6 @@
 <script lang="ts">
   import { page } from '$app/stores';
+  import { t } from '$lib/translations';
 
   export let title: string;
   export let href: string;
@@ -9,7 +10,7 @@
 </script>
 
 <a {href} target={isExternal ? '_blank' : '_self'} class:active={path === href}>
-  {title}
+  {$t(title)}
   {#if isExternal}
     <i class="bi bi-box-arrow-up-right" />
   {/if}

@@ -12,7 +12,11 @@
 
   const navbarLinks: NavbarLink[] = [
     {
-      title: 'Blog',
+      title: 'about_me.title',
+      href: '/about-me',
+    },
+    {
+      title: 'blog.title',
       href: '/blog',
     },
     {

@@ -17,5 +17,10 @@
     "loading_failed": "Unable to load the articles for now",
     "read_article": "Read the article",
     "see_all": "See more on DEV"
+  },
+  "about_me": {
+    "tab_title": "Pierre Bouillon | About me",
+    "title": "About me",
+    "introduction": "Hi, I'm Pierre Bouillon, a french software engineer from Luxembourg.\n\nCurious and empathetic by nature, I enjoy experimenting things on my own and share them with others through articles, teaching or simply talking.\n\nI currently am working with .NET and Angular as a technological stack even though I also enjoy using Svelte and discover new technologies."
   }
 }
