@@ -8,7 +8,7 @@
 
 <li>
   <span
-    class="absolute -left-5 inline-flex h-9 w-9 items-center justify-center rounded-full bg-neutral text-neutral-content lg:-left-5 lg:h-10 lg:w-10 lg:text-lg"
+    class="absolute -left-5 inline-flex h-9 w-9 items-center justify-center rounded-full bg-neutral text-neutral-content ring-8 ring-base-100 lg:-left-5 lg:h-10 lg:w-10 lg:text-lg"
   >
     <i class={$t(event.icon)} />
   </span>

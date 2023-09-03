@@ -21,11 +21,11 @@
   "about_me": {
     "tab_title": "Pierre Bouillon | A propos",
     "title": "A propos",
-    "introduction": "Bonjour, je suis Pierre Bouillon, un ingénieur logiciel français basé à Luxembourg.\n\nDe nature curieuse et empathique, j'aime expérimenter des choses par moi-même et les partager avec les autres à travers des articles, l'enseignement ou divers projets personnels sur GitHub.\n\nJe travaille actuellement avec <b>.NET</b> et <b>Angular</b> en tant que stack technique, même si j'apprécie également l'utilisation de <b>Svelte</b> et découvrir de nouvelles technologies.",
+    "introduction": "Bonjour! Je suis Pierre Bouillon, <b>un ingénieur logiciel</b> français basé à Luxembourg.\n\nDe nature curieuse et empathique, j'aime expérimenter des choses par moi-même et les partager avec les autres à travers des articles, l'enseignement ou divers projets personnels sur GitHub.\n\nJe travaille actuellement avec <b>.NET</b> et <b>Angular</b> en tant que stack technique, même si j'apprécie également l'utilisation de <b>Svelte</b> et découvrir de nouvelles technologies.",
     "see_resume": "Voir mon CV",
     "experiences": {
       "lombard_odier": {
-        "title": "Référent Technique Angular",
+        "title": "Développeur .NET / Référent Technique Angular",
         "icon": "bi bi-bank",
         "location": "Lombard Odier - Luxembourg, Luxembourg",
         "period": "Novembre 2021 - Aujourd'hui",
@@ -36,7 +36,7 @@
         "icon": "bi bi-journal-bookmark-fill",
         "location": "Université de Lorraine - Nancy, France",
         "period": "Septembre 2020 - Juin 2023 • 3 ans",
-        "description": "<b>Intervenant</b> dans le module d'introduction à la gestion de projet Agile"
+        "description": "<b>Intervenant</b> dans le module d'introduction à la gestion de projets Agile"
       },
       "docaposte": {
         "title": "Apprenti Ingénieur Informatique",
