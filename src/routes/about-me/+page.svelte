@@ -1,24 +1,23 @@
 <script lang="ts">
-  import { t } from '$lib/translations';
+  import type { TimelineEvent } from '$lib/components/timeline/timeline-event';
+  import TimelineItem from '$lib/components/timeline/timeline-item.svelte';
+  import Timeline from '$lib/components/timeline/timeline.svelte';
   import Page from '$lib/layouts/page.svelte';
-  import Timeline from './timeline.svelte';
+  import { t } from '$lib/translations';
 
-  const timelineEvents = [
-    {
-      icon: 'bi bi-bank',
-      title: 'Lorem Ipsum',
-      period: '2022 - Now',
-      content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sapiente totam veritatis minima quidem in, nam similique aut possimus!',
-    },
-    {
-      icon: 'bi bi-person-vcard',
-      period: '2019 - 2022',
-      title: 'Lorem Ipsum',
-      content:
-        'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio sapiente totam veritatis minima quidem in, nam similique aut possimus!',
-    },
-  ];
+  const companies = ['lombard_odier', 'ul', 'docaposte'];
+
+  $: timelineEvents = companies
+    .map((name: string) => `about_me.experiences.${name}`)
+    .map(
+      (prefix): TimelineEvent => ({
+        icon: `${prefix}.icon`,
+        description: `${prefix}.description`,
+        location: `${prefix}.location`,
+        period: `${prefix}.period`,
+        title: `${prefix}.title`,
+      })
+    );
 </script>
 
 <svelte:head>
@@ -38,13 +37,13 @@
     />
 
     <p class="prose-lg col-span-3 max-w-xl whitespace-pre-line">
-      {$t('about_me.introduction')}
+      {@html $t('about_me.introduction')}
     </p>
   </div>
 
   <h2>Mon parcours</h2>
 
   <div class="ml-5">
-    <Timeline items={timelineEvents} />
+    <Timeline events={timelineEvents} />
   </div>
 </Page>
