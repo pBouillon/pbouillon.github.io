@@ -9,7 +9,7 @@
   import { themeChange } from 'theme-change';
 
   import KonamiCode from '$lib/components/konami-code.svelte';
-  import Navbar from '$lib/components/navbar.svelte';
+  import Navbar from '$lib/components/navbar/navbar.svelte';
   import { loadTranslations } from '$lib/translations';
 
   onMount(async () => {

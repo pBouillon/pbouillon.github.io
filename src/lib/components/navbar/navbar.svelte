@@ -1,8 +1,8 @@
 <script lang="ts">
-  import LanguageSelector from './language-selector.svelte';
+  import LanguageSelector from '$lib/components/language-selector.svelte';
+  import ThemeTogglerButton from '$lib/components/theming/theme-toggler-button.svelte';
+  import ThemeTogglerSelect from '$lib/components/theming/theme-toggler-select.svelte';
   import NavbarLink from './navbar-link.svelte';
-  import ThemeTogglerButton from './theme-toggler-button.svelte';
-  import ThemeTogglerSelect from './theme-toggler-select.svelte';
 
   type NavbarLink = {
     title: string;
