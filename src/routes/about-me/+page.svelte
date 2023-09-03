@@ -41,9 +41,18 @@
     </p>
   </div>
 
-  <h2>Mon parcours</h2>
+  <section class="mb-10">
+    <h2>Mon parcours</h2>
 
-  <div class="ml-5">
-    <Timeline events={timelineEvents} />
-  </div>
+    <div class="ml-5">
+      <Timeline events={timelineEvents} />
+    </div>
+
+    <div class="flex justify-center">
+      <a href="/resume.pdf" class="btn btn-primary mx-auto w-1/2">
+        {$t('about_me.see_resume')}
+        <i class="bi bi-file-earmark-text" />
+      </a>
+    </div>
+  </section>
 </Page>

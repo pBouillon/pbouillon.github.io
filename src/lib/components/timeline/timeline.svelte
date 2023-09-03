@@ -5,7 +5,7 @@
   export let events: TimelineEvent[] = [];
 </script>
 
-<ol class="border-l-base relative mb-20 list-none border-l-2">
+<ol class="border-l-base relative list-none border-l-2">
   {#each events as event}
     <TimelineItem {event} />
   {/each}

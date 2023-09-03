@@ -22,6 +22,7 @@
     "tab_title": "Pierre Bouillon | A propos",
     "title": "A propos",
     "introduction": "Bonjour, je suis Pierre Bouillon, un ingénieur logiciel français basé à Luxembourg.\n\nDe nature curieuse et empathique, j'aime expérimenter des choses par moi-même et les partager avec les autres à travers des articles, l'enseignement ou divers projets personnels sur GitHub.\n\nJe travaille actuellement avec <b>.NET</b> et <b>Angular</b> en tant que stack technique, même si j'apprécie également l'utilisation de <b>Svelte</b> et découvrir de nouvelles technologies.",
+    "see_resume": "Voir mon CV",
     "experiences": {
       "lombard_odier": {
         "title": "Référent Technique Angular",
