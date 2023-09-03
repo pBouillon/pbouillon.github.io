@@ -21,7 +21,7 @@
 </script>
 
 <svelte:head>
-  <title>{$t('blog.tab_title')}</title>
+  <title>{$t('about_me.tab_title')}</title>
 </svelte:head>
 
 <Page>
