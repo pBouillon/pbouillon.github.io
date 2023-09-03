@@ -21,6 +21,29 @@
   "about_me": {
     "tab_title": "Pierre Bouillon | About me",
     "title": "About me",
-    "introduction": "Hi, I'm Pierre Bouillon, a french software engineer from Luxembourg.\n\nCurious and empathetic by nature, I enjoy experimenting things on my own and share them with others through articles, teaching or simply talking.\n\nI currently am working with .NET and Angular as a technological stack even though I also enjoy using Svelte and discover new technologies."
+    "introduction": "Hi, I'm Pierre Bouillon, a french software engineer from Luxembourg.\n\nCurious and empathetic by nature, I enjoy experimenting things on my own and share them with others through articles, teaching or simply talking.\n\nI currently am working with .NET and Angular as a technological stack even though I also enjoy using Svelte and discover new technologies.",
+    "experiences": {
+      "lombard_odier": {
+        "title": "Lead Angular",
+        "icon": "bi bi-bank",
+        "location": "Lombard Odier - Luxembourg, Luxembourg",
+        "period": "November 2021 - Present",
+        "description": "Design and development of an <b>audit management platform</b> re-certifying internal company components and synchronizing the information with third-party IT systems, in <b>.NET/Angular</b>"
+      },
+      "ul": {
+        "title": "Temporary Teacher",
+        "icon": "bi bi-journal-bookmark-fill",
+        "location": "University of Lorraine - Nancy, France",
+        "period": "September 2020 - June 2023",
+        "description": "<b>Temporary teacher</b> for the introduction to Agile project management module"
+      },
+      "docaposte": {
+        "title": "Computer Engineering Apprentice",
+        "icon": "bi bi-person-vcard",
+        "location": "Docaposte - Metz, France",
+        "period": "September 2018 - September 2021",
+        "description": "Design and development of a <b>front- and back-office ticketing management platform</b> for a region using <b>.NET/Angular</b>"
+      }
+    }
   }
 }
