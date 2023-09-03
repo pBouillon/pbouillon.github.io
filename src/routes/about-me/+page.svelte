@@ -44,7 +44,7 @@
 
   <h2>Mon parcours</h2>
 
-  <div class="mx-5 lg:mx-0">
+  <div class="ml-5">
     <Timeline items={timelineEvents} />
   </div>
 </Page>
