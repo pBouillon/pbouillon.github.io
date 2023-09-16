@@ -32,8 +32,13 @@
   ];
 </script>
 
-<div class="drawer drawer-end absolute">
-  <input id="navbar-drawer" type="checkbox" class="drawer-toggle" />
+<header class="drawer drawer-end absolute">
+  <input
+    id="navbar-drawer"
+    name="navbar-drawer"
+    type="checkbox"
+    class="drawer-toggle"
+  />
 
   <!-- Navbar -->
   <div class="drawer-content flex flex-col">
@@ -77,4 +82,10 @@
       <li><ThemeTogglerSelect /></li>
     </ul>
   </nav>
-</div>
+</header>
+
+<style>
+  header {
+    view-transition-name: header;
+  }
+</style>

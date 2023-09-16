@@ -7,9 +7,10 @@
   export let isExternal: boolean = false;
 
   $: path = $page.url.pathname;
+  $: target = isExternal ? '_blank' : '';
 </script>
 
-<a {href} target={isExternal ? '_blank' : '_self'} class:active={path === href}>
+<a {href} class:active={path === href} {target}>
   {$t(title)}
   {#if isExternal}
     <i class="bi bi-box-arrow-up-right" />
