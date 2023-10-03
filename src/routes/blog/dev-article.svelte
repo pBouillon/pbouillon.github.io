@@ -6,9 +6,7 @@
   export let article: Article;
 </script>
 
-<article
-  class="card -z-10 my-5 w-96 rounded-lg border border-primary shadow-xl"
->
+<article class="card my-5 w-96 rounded-lg border border-primary shadow-xl">
   <figure>
     <LazyLoadedImage src={article.coverImage} alt={article.title} />
   </figure>
