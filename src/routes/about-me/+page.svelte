@@ -42,7 +42,7 @@
   </div>
 
   <section class="mb-10">
-    <h2>Mon parcours</h2>
+    <h2>{$t('about_me.past_experiences')}</h2>
 
     <div class="ml-5">
       <Timeline events={timelineEvents} />

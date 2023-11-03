@@ -23,6 +23,7 @@
     "title": "About me",
     "introduction": "Hi! I'm Pierre Bouillon, a french software engineer from Luxembourg.\n\nCurious and empathetic by nature, I enjoy experimenting things on my own and share them with others through articles, teaching or simply talking.\n\nI currently am working with .NET and Angular as a technological stack even though I also enjoy using Svelte and discover new technologies.",
     "see_resume": "See my CV",
+    "past_experiences": "Past Experiences",
     "experiences": {
       "lombard_odier": {
         "title": ".NET Developer / Lead Angular",
