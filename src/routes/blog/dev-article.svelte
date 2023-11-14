@@ -23,7 +23,7 @@
     <p>{article.description}</p>
 
     <div class="card-actions justify-end pt-3">
-      <a href={article.url} target="_blank" class="btn btn-primary"
+      <a href={article.url} target="_blank" class="btn btn-primary uppercase"
         >{$t('blog.read_article')} <i class="bi bi-arrow-right" /></a
       >
     </div>

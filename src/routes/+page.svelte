@@ -34,13 +34,13 @@
     <section class="max-w-md">
       <img
         src="me.jpg"
-        class="mx-auto my-12 h-52 w-52 rounded-full shadow"
+        class="mx-auto my-12 h-52 w-52 rounded-full"
         alt="Profile"
       />
-      <h1 class="text-5xl font-bold">{$t('home.title')}</h1>
-      <p class="py-6 text-2xl">{$t('home.introduction')}</p>
+      <h1 class="pb-3 text-5xl font-bold">{$t('home.title')}</h1>
+      <p class="text-2xl">{$t('home.introduction')}</p>
 
-      <div class="divider" />
+      <hr class="my-10 h-px border-0 bg-slate-400" />
 
       <div class="space-x-3 lg:space-x-5">
         {#each heroLinks as link}

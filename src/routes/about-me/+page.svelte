@@ -49,7 +49,7 @@
     </div>
 
     <div class="flex justify-center">
-      <a href="/resume.pdf" class="btn btn-primary mx-auto w-1/2">
+      <a href="/resume.pdf" class="btn btn-primary mx-auto w-1/2 uppercase">
         {$t('about_me.see_resume')}
         <i class="bi bi-file-earmark-text" />
       </a>
