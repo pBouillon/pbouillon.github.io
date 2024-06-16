@@ -29,22 +29,25 @@
         "title": ".NET Developer / Lead Angular",
         "icon": "bi bi-bank",
         "location": "Lombard Odier - Luxembourg, Luxembourg",
+        "contextUrl": "https://www.lombardodier.com",
         "period": "November 2021 - Present",
-        "description": "Design and development of an <b>audit management platform</b> re-certifying internal company components and synchronizing the information with third-party IT systems, in <b>.NET/Angular</b>"
+        "description": "Design and development of an <b>audit management platform</b> re-certifying internal company components and synchronizing information with third-party IT systems, in <b>.NET/Angular</b>"
       },
       "ul": {
         "title": "Temporary Teacher",
         "icon": "bi bi-journal-bookmark-fill",
         "location": "University of Lorraine - Nancy, France",
+        "contextUrl": "https://www.univ-lorraine.fr",
         "period": "September 2020 - June 2023 • 3 years",
         "description": "<b>Temporary teacher</b> for the introduction to Agile project management module"
       },
       "docaposte": {
-        "title": "Software Engineer (Apprentice)",
+        "title": "Software Engineer Apprentice",
         "icon": "bi bi-person-vcard",
         "location": "Docaposte - Metz, France",
+        "contextUrl": "https://www.docaposte.com",
         "period": "September 2018 - September 2021 • 3 years",
-        "description": "Design and development of a <b>front- and back-office ticketing management platform</b> for a french region using <b>.NET/Angular</b>"
+        "description": "Design and development of a <b>front and back-office ticketing management platform</b> for a french region using <b>.NET/Angular</b>"
       }
     }
   }

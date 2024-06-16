@@ -4,4 +4,5 @@ export interface TimelineEvent {
   period: string;
   title: string;
   description: string;
+  contextUrl: string;
 }

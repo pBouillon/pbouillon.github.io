@@ -13,19 +13,13 @@
     <i class={$t(event.icon)} />
   </span>
 
-  <h3 class="my-0">
-    {$t(event.title)}
-  </h3>
+  <h3 class="my-0">{$t(event.title)}</h3>
 
-  <p class="my-0 text-sm font-semibold">
-    {$t(event.location)}
-  </p>
+  <a class="my-0 text-sm font-semibold" href={$t(event.contextUrl)}
+    >{$t(event.location)}</a
+  >
 
-  <p class="my-1 text-xs">
-    {$t(event.period)}
-  </p>
+  <p class="my-1 text-xs">{$t(event.period)}</p>
 
-  <p class="prose-sm mb-8 mt-3">
-    {@html $t(event.description)}
-  </p>
+  <p class="prose-sm mb-8 mt-3">{@html $t(event.description)}</p>
 </li>

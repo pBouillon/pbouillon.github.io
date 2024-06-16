@@ -14,6 +14,7 @@
         icon: `${prefix}.icon`,
         description: `${prefix}.description`,
         location: `${prefix}.location`,
+        contextUrl: `${prefix}.contextUrl`,
         period: `${prefix}.period`,
         title: `${prefix}.title`,
       })
