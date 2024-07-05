@@ -77,8 +77,6 @@ export default class HomeComponent implements AfterViewInit {
     this.#ngZone.runOutsideAngular(() =>
       this.#jsConfetti?.addConfetti({
         emojis: ['🦄', '☕'],
-        emojiSize: 100,
-        confettiNumber: 50,
       }),
     );
   }
