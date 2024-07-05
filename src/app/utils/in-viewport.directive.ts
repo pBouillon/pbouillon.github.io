@@ -8,24 +8,23 @@ import {
 } from '@angular/core';
 
 @Directive({
-  selector: '[inViewport]',
+  selector: '[percentageInViewport]',
   standalone: true,
 })
 export class InViewportDirective implements AfterViewInit, OnDestroy {
-  readonly inViewport = output<void>();
+  readonly percentageInViewport = output<number>();
   readonly #observedElementRef = inject(ElementRef<unknown>);
 
   readonly #observer = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          this.inViewport.emit();
+          this.percentageInViewport.emit(entry.intersectionRatio);
         }
       });
     },
     {
-      // Use 25% margins to only consider the middle 50% of the viewport
-      rootMargin: '-25% 0% -25% 0%',
+      threshold: Array.from({ length: 10 }, (_, i) => i / 10),
     },
   );
 

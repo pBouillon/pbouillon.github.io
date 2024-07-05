@@ -11,13 +11,13 @@ import JSConfetti from 'js-confetti';
 import { FooterComponent } from '../../shell/components';
 import { ActivateSectionService } from '../../utils/active-section/active-section.service';
 import { InViewportDirective } from '../../utils/in-viewport.directive';
+import { KonamiCodeDirective } from '../../utils/konami-code.directive';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { SocialsComponent } from './introduction/socials.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
-import { KonamiCodeDirective } from '../../utils/konami-code.directive';
 
 @Component({
   standalone: true,
@@ -47,16 +47,19 @@ import { KonamiCodeDirective } from '../../utils/konami-code.directive';
         </header>
 
         <main class="pt-24 lg:w-1/2 lg:py-24">
-          <app-about-me (inViewport)="setFragment('about')" />
-
-          <app-experience
-            #experience
-            (inViewport)="setFragment('experience')"
+          <app-about-me
+            (percentageInViewport)="updateSectionVisibility('about', $event)"
           />
 
-          @defer (on viewport(experience); prefetch on idle) {
-            <app-articles (inViewport)="setFragment('articles')" />
-          }
+          <app-experience
+            (percentageInViewport)="
+              updateSectionVisibility('experience', $event)
+            "
+          />
+
+          <app-articles
+            (percentageInViewport)="updateSectionVisibility('articles', $event)"
+          />
           <app-footer />
         </main>
       </div>
@@ -81,7 +84,7 @@ export default class HomeComponent implements AfterViewInit {
     );
   }
 
-  setFragment(fragment: string): void {
-    this.#activeSection.setActiveSection(fragment);
+  updateSectionVisibility(section: string, percentageInViewport: number): void {
+    this.#activeSection.updateSectionVisibility(section, percentageInViewport);
   }
 }
