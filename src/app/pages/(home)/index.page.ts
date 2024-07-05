@@ -9,8 +9,6 @@ import {
 import JSConfetti from 'js-confetti';
 
 import { FooterComponent } from '../../shell/components';
-import { ActivateSectionService } from '../../utils/active-section/active-section.service';
-import { TrackSectionVisibilityDirective } from '../../utils/track-section-visibility';
 import { KonamiCodeDirective } from '../../utils/konami-code.directive';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ArticlesComponent } from './articles/articles.component';
@@ -58,8 +56,8 @@ import { SidenavComponent } from './sidenav/sidenav.component';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export default class HomeComponent implements AfterViewInit {
-  readonly #activeSection = inject(ActivateSectionService);
   readonly #ngZone = inject(NgZone);
+
   #jsConfetti: JSConfetti | null = null;
 
   ngAfterViewInit(): void {
@@ -72,9 +70,5 @@ export default class HomeComponent implements AfterViewInit {
         emojis: ['🦄', '☕'],
       }),
     );
-  }
-
-  updateSectionVisibility(section: string, percentageInViewport: number): void {
-    this.#activeSection.updateSectionVisibility(section, percentageInViewport);
   }
 }
