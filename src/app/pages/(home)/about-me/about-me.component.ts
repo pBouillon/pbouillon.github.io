@@ -1,11 +1,14 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
+import { TrackSectionVisibilityDirective } from '../../../utils/track-section-visibility';
+
 @Component({
   selector: 'app-about-me',
   standalone: true,
-  imports: [],
+  imports: [TrackSectionVisibilityDirective],
   template: `
     <section
+      trackSectionVisibility
       id="about"
       class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 lg:text-lg"
     >

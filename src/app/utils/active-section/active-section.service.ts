@@ -1,8 +1,24 @@
-import { Injectable, computed, signal } from '@angular/core';
+import { ElementRef, Injectable, computed, signal } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class ActivateSectionService {
   readonly #sectionsVisibility = signal<Record<string, number>>({});
+
+  readonly #observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          this.#updateSectionVisibility(
+            entry.target.id,
+            entry.intersectionRatio,
+          );
+        }
+      });
+    },
+    {
+      threshold: Array.from({ length: 10 }, (_, i) => i / 10),
+    },
+  );
 
   readonly currentSection = computed(() => {
     const sectionsVisibility = this.#sectionsVisibility();
@@ -15,7 +31,11 @@ export class ActivateSectionService {
     );
   });
 
-  updateSectionVisibility(section: string, percentageInViewport: number) {
+  trackSection(sectionEl: ElementRef) {
+    this.#observer.observe(sectionEl.nativeElement);
+  }
+
+  #updateSectionVisibility(section: string, percentageInViewport: number) {
     this.#sectionsVisibility.update((sectionsVisibility) => ({
       ...sectionsVisibility,
       [section]: percentageInViewport,

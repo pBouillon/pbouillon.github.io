@@ -2,6 +2,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 import { BootstrapIconDirective } from '../../../utils/icons';
+import { TrackSectionVisibilityDirective } from '../../../utils/track-section-visibility';
 import { PillComponent } from '../../../utils/pill/pill.component';
 import { ExperienceCardComponent } from './experience-card.component';
 
@@ -12,10 +13,12 @@ import { ExperienceCardComponent } from './experience-card.component';
     RouterLink,
     ExperienceCardComponent,
     PillComponent,
+    TrackSectionVisibilityDirective,
     BootstrapIconDirective,
   ],
   template: `
     <section
+      trackSectionVisibility
       id="experience"
       class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 lg:text-lg"
     >

@@ -6,8 +6,9 @@ import {
   signal,
 } from '@angular/core';
 
-import { delay, first } from 'rxjs';
+import { first } from 'rxjs';
 
+import { TrackSectionVisibilityDirective } from '../../../utils/track-section-visibility';
 import { DevCommunityArticle } from './dev-community-article';
 import { DevCommunityArticleComponent } from './dev-community-article.component';
 import { DevCommunityService } from './dev-community.service';
@@ -15,9 +16,10 @@ import { DevCommunityService } from './dev-community.service';
 @Component({
   selector: 'app-articles',
   standalone: true,
-  imports: [DevCommunityArticleComponent],
+  imports: [DevCommunityArticleComponent, TrackSectionVisibilityDirective],
   template: `
     <section
+      trackSectionVisibility
       id="articles"
       class="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24 lg:text-lg"
     >

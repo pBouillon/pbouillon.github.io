@@ -10,7 +10,7 @@ import JSConfetti from 'js-confetti';
 
 import { FooterComponent } from '../../shell/components';
 import { ActivateSectionService } from '../../utils/active-section/active-section.service';
-import { InViewportDirective } from '../../utils/in-viewport.directive';
+import { TrackSectionVisibilityDirective } from '../../utils/track-section-visibility';
 import { KonamiCodeDirective } from '../../utils/konami-code.directive';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { ArticlesComponent } from './articles/articles.component';
@@ -28,7 +28,6 @@ import { SidenavComponent } from './sidenav/sidenav.component';
     IntroductionComponent,
     SidenavComponent,
     SocialsComponent,
-    InViewportDirective,
     FooterComponent,
     KonamiCodeDirective,
   ],
@@ -47,19 +46,10 @@ import { SidenavComponent } from './sidenav/sidenav.component';
         </header>
 
         <main class="pt-24 lg:w-1/2 lg:py-24">
-          <app-about-me
-            (percentageInViewport)="updateSectionVisibility('about', $event)"
-          />
+          <app-about-me />
+          <app-experience />
+          <app-articles />
 
-          <app-experience
-            (percentageInViewport)="
-              updateSectionVisibility('experience', $event)
-            "
-          />
-
-          <app-articles
-            (percentageInViewport)="updateSectionVisibility('articles', $event)"
-          />
           <app-footer />
         </main>
       </div>
