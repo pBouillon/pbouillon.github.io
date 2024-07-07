@@ -32,7 +32,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 
       <li>
         <a
-          href="public/cv.pdf"
+          href="cv.pdf"
           target="_blank"
           class="transition hover:text-teal-500"
           title="CV"
