@@ -26,9 +26,9 @@ import { DevCommunityArticle } from './dev-community-article';
         </figure>
 
         <div class="space-y-2 group-hover/article:text-teal-600 sm:col-span-8">
-          <h4 class="text-base font-semibold capitalize">
+          <h3 class="text-base font-semibold capitalize">
             {{ article().title }}
-          </h4>
+          </h3>
 
           <p class="text-sm text-slate-500">{{ article().description }}</p>
 
