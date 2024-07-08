@@ -8,6 +8,7 @@ import {
 
 import { first } from 'rxjs';
 
+import { BootstrapIconDirective } from '../../../utils/icons';
 import { TrackSectionVisibilityDirective } from '../../../utils/track-section-visibility';
 import { DevCommunityArticle } from './dev-community-article';
 import { DevCommunityArticleComponent } from './dev-community-article.component';
@@ -16,7 +17,11 @@ import { DevCommunityService } from './dev-community.service';
 @Component({
   selector: 'app-articles',
   standalone: true,
-  imports: [DevCommunityArticleComponent, TrackSectionVisibilityDirective],
+  imports: [
+    BootstrapIconDirective,
+    DevCommunityArticleComponent,
+    TrackSectionVisibilityDirective,
+  ],
   template: `
     <section
       trackSectionVisibility
@@ -36,6 +41,18 @@ import { DevCommunityService } from './dev-community.service';
           <app-dev-community-article [article]="article" />
         }
       </div>
+
+      <a
+        href="https://dev.to/pbouillon"
+        target="_blank"
+        class="external-link group/dev mt-12 transition-all"
+      >
+        <span class="capitalize">Browse all articles on DEV</span>
+        <i
+          class="ml-2 inline-block group-hover/dev:-translate-y-px group-hover/dev:translate-x-px"
+          bootstrapIcon="box-arrow-in-up-right"
+        ></i
+      ></a>
     </section>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
