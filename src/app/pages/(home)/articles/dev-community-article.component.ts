@@ -17,6 +17,7 @@ import { DevCommunityArticle } from './dev-community-article';
           ></div>
           <img
             [ngSrc]="article().cover_image"
+            [alt]="article().title + 'cover image'"
             priority
             width="500"
             height="210"
