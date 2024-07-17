@@ -49,6 +49,20 @@ import { NavLinkDirective } from './nav-link.directive';
             routerLink
             routerLinkActive="active"
             [routerLinkActiveOptions]="isActiveMatchOptions"
+            [class.active]="activeSection.currentSection() === 'education'"
+            fragment="education"
+            class="w-fit"
+          >
+            <span>Education</span>
+          </a>
+        </li>
+
+        <li>
+          <a
+            appNavLink
+            routerLink
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="isActiveMatchOptions"
             [class.active]="activeSection.currentSection() === 'articles'"
             fragment="articles"
             class="w-fit"

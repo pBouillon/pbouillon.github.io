@@ -16,18 +16,21 @@ import { ExperienceComponent } from './experience/experience.component';
 import { IntroductionComponent } from './introduction/introduction.component';
 import { SocialsComponent } from './introduction/socials.component';
 import { SidenavComponent } from './sidenav/sidenav.component';
+import { EducationComponent } from './education/education.component';
 
 @Component({
   standalone: true,
   imports: [
     AboutMeComponent,
     ArticlesComponent,
+    EducationComponent,
     ExperienceComponent,
+    FooterComponent,
+    HomeComponent,
     IntroductionComponent,
+    KonamiCodeDirective,
     SidenavComponent,
     SocialsComponent,
-    FooterComponent,
-    KonamiCodeDirective,
   ],
   template: `
     <div
@@ -46,6 +49,7 @@ import { SidenavComponent } from './sidenav/sidenav.component';
         <main class="pt-24 lg:w-1/2 lg:py-24">
           <app-about-me />
           <app-experience />
+          <app-education />
           <app-articles />
 
           <app-footer />

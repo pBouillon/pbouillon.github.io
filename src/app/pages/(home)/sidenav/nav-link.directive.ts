@@ -11,12 +11,11 @@ import {
   standalone: true,
 })
 export class NavLinkDirective implements AfterViewInit {
-  readonly #parentLiElementRef: ElementRef<HTMLAnchorElement> =
-    inject(ElementRef);
+  readonly #parentLiElementRef = inject(ElementRef<HTMLAnchorElement>);
   readonly #renderer = inject(Renderer2);
 
   ngAfterViewInit(): void {
-    this.styleElement(
+    this.addClassesTo(
       this.#parentLiElementRef.nativeElement,
       'group flex cursor-pointer items-center gap-4 text-xs font-bold uppercase tracking-widest',
     );
@@ -24,13 +23,13 @@ export class NavLinkDirective implements AfterViewInit {
     const textSpanElement =
       this.#parentLiElementRef.nativeElement.querySelector('span')!;
 
-    this.styleElement(
+    this.addClassesTo(
       textSpanElement,
       'transition-all group-hover:text-teal-500 group-[&.active]:text-teal-500',
     );
 
     const underlineSpanElement = this.#renderer.createElement('span');
-    this.styleElement(
+    this.addClassesTo(
       underlineSpanElement,
       'h-px w-8 bg-slate-400 transition-all group-hover:w-16 group-hover:bg-teal-500 group-[&.active]:w-16 group-[&.active]:bg-teal-500',
     );
@@ -42,7 +41,7 @@ export class NavLinkDirective implements AfterViewInit {
     );
   }
 
-  private styleElement(element: HTMLElement, classes: string): void {
+  private addClassesTo(element: HTMLElement, classes: string): void {
     classes
       .split(' ')
       .forEach((klass) => this.#renderer.addClass(element, klass));
