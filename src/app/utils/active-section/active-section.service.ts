@@ -6,14 +6,14 @@ export class ActivateSectionService {
 
   readonly #observer = new IntersectionObserver(
     (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
+      entries
+        .filter((entry) => entry.isIntersecting)
+        .forEach((entry) =>
           this.#updateSectionVisibility(
             entry.target.id,
             entry.intersectionRatio,
-          );
-        }
-      });
+          ),
+        );
     },
     {
       threshold: Array.from({ length: 10 }, (_, i) => i / 10),
