@@ -1,10 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-introduction',
-  standalone: true,
-  imports: [],
-  template: `
+    selector: 'app-introduction',
+    imports: [],
+    template: `
     <div>
       <hgroup class="tracking-tight text-slate-700">
         <h1 class="text-4xl font-bold lg:text-5xl">Pierre Bouillon</h1>
@@ -21,6 +20,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
       <p class="mt-1 text-xs text-slate-500 lg:mt-2">I also drink coffee.</p>
     </div>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class IntroductionComponent {}

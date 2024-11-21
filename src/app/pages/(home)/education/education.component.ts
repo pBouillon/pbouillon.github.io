@@ -5,14 +5,13 @@ import { EducationTimelineItemComponent } from './education-timeline-item.compon
 import { EducationTimelineComponent } from './education-timeline.component';
 
 @Component({
-  selector: 'app-education',
-  standalone: true,
-  imports: [
-    TrackSectionVisibilityDirective,
-    EducationTimelineComponent,
-    EducationTimelineItemComponent,
-  ],
-  template: `
+    selector: 'app-education',
+    imports: [
+        TrackSectionVisibilityDirective,
+        EducationTimelineComponent,
+        EducationTimelineItemComponent,
+    ],
+    template: `
     <section
       trackSectionVisibility
       id="education"
@@ -47,6 +46,6 @@ import { EducationTimelineComponent } from './education-timeline.component';
       </app-education-timeline>
     </section>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class EducationComponent {}

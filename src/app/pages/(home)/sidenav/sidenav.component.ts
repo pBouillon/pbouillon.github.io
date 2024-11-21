@@ -9,10 +9,9 @@ import { ActivateSectionService } from '../../../utils/active-section/active-sec
 import { NavLinkDirective } from './nav-link.directive';
 
 @Component({
-  selector: 'app-sidenav',
-  standalone: true,
-  imports: [RouterLink, RouterLinkActive, NavLinkDirective],
-  template: `
+    selector: 'app-sidenav',
+    imports: [RouterLink, RouterLinkActive, NavLinkDirective],
+    template: `
     <nav class="hidden lg:block">
       <ul class="flex flex-col gap-5">
         <li>
@@ -73,7 +72,7 @@ import { NavLinkDirective } from './nav-link.directive';
       </ul>
     </nav>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SidenavComponent {
   readonly activeSection = inject(ActivateSectionService);

@@ -1,15 +1,14 @@
 import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 
-import { BootstrapIconDirective } from '../../../utils/icons/bootstrap-icon.directive';
+import { BootstrapIconDirective } from "../../../utils/icons";
 
 @Component({
-  selector: 'app-experience-card',
-  standalone: true,
-  imports: [BootstrapIconDirective],
-  host: {
-    class: 'block',
-  },
-  template: `
+    selector: 'app-experience-card',
+    imports: [BootstrapIconDirective],
+    host: {
+        class: 'block',
+    },
+    template: `
     <a
       [href]="redirectTo()"
       target="_blank"
@@ -58,7 +57,7 @@ import { BootstrapIconDirective } from '../../../utils/icons/bootstrap-icon.dire
       </section>
     </a>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ExperienceCardComponent {
   readonly redirectTo = input.required<string>();

@@ -15,14 +15,13 @@ import { DevCommunityArticleComponent } from './dev-community-article.component'
 import { DevCommunityService } from './dev-community.service';
 
 @Component({
-  selector: 'app-articles',
-  standalone: true,
-  imports: [
-    BootstrapIconDirective,
-    DevCommunityArticleComponent,
-    TrackSectionVisibilityDirective,
-  ],
-  template: `
+    selector: 'app-articles',
+    imports: [
+        BootstrapIconDirective,
+        DevCommunityArticleComponent,
+        TrackSectionVisibilityDirective,
+    ],
+    template: `
     <section
       trackSectionVisibility
       id="articles"
@@ -55,7 +54,7 @@ import { DevCommunityService } from './dev-community.service';
       ></a>
     </section>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ArticlesComponent implements AfterViewInit {
   readonly #devCommunityService = inject(DevCommunityService);

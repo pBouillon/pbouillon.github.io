@@ -7,16 +7,15 @@ import { PillComponent } from '../../../utils/pill/pill.component';
 import { ExperienceCardComponent } from './experience-card.component';
 
 @Component({
-  selector: 'app-experience',
-  standalone: true,
-  imports: [
-    RouterLink,
-    ExperienceCardComponent,
-    PillComponent,
-    TrackSectionVisibilityDirective,
-    BootstrapIconDirective,
-  ],
-  template: `
+    selector: 'app-experience',
+    imports: [
+        RouterLink,
+        ExperienceCardComponent,
+        PillComponent,
+        TrackSectionVisibilityDirective,
+        BootstrapIconDirective,
+    ],
+    template: `
     <section
       trackSectionVisibility
       id="experience"
@@ -115,6 +114,6 @@ import { ExperienceCardComponent } from './experience-card.component';
       ></a>
     </section>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ExperienceComponent {}

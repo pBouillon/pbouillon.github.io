@@ -1,10 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-socials',
-  standalone: true,
-  imports: [],
-  template: `
+    selector: 'app-socials',
+    imports: [],
+    template: `
     <ul class="flex items-center gap-4 text-2xl lg:gap-6 lg:text-3xl">
       <li>
         <a
@@ -55,6 +54,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
       </li>
     </ul>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SocialsComponent {}

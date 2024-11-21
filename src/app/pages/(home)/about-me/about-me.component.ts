@@ -3,10 +3,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { TrackSectionVisibilityDirective } from '../../../utils/track-section-visibility';
 
 @Component({
-  selector: 'app-about-me',
-  standalone: true,
-  imports: [TrackSectionVisibilityDirective],
-  template: `
+    selector: 'app-about-me',
+    imports: [TrackSectionVisibilityDirective],
+    template: `
     <section
       trackSectionVisibility
       id="about"
@@ -47,6 +46,6 @@ import { TrackSectionVisibilityDirective } from '../../../utils/track-section-vi
       </p>
     </section>
   `,
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class AboutMeComponent {}

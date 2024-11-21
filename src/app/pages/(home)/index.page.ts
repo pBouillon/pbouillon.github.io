@@ -2,8 +2,8 @@ import {
   AfterViewInit,
   ChangeDetectionStrategy,
   Component,
-  NgZone,
   inject,
+  NgZone,
 } from '@angular/core';
 
 import JSConfetti from 'js-confetti';
@@ -19,14 +19,12 @@ import { SidenavComponent } from './sidenav/sidenav.component';
 import { EducationComponent } from './education/education.component';
 
 @Component({
-  standalone: true,
   imports: [
     AboutMeComponent,
     ArticlesComponent,
     EducationComponent,
     ExperienceComponent,
     FooterComponent,
-    HomeComponent,
     IntroductionComponent,
     KonamiCodeDirective,
     SidenavComponent,
