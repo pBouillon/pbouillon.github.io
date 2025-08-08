@@ -1,5 +1,8 @@
 {
   "recommendations": [
-    "angular.ng-template"
+    "svelte.svelte-vscode",
+    "usernamehw.errorlens",
+    "christian-kohler.path-intellisense",
+    "inlang.vs-code-extension"
   ]
 }
