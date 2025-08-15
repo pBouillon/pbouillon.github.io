@@ -1,4 +1,25 @@
 {
-	"$schema": "https://inlang.com/schema/inlang-message-format",
-	"hello_world": "Hello, {name} from fr!"
+  "$schema": "https://inlang.com/schema/inlang-message-format",
+  "welcome_message": "Bonjour, je m'appelle Pierre!",
+  "introduction_subtext": "Aussi amateur de randonnées et de roller.",
+  "switch_language": "English",
+  "switch_language_long": "English Version",
+  "page_title": "Pierre Bouillon | Ingénieur Logiciel",
+  "page_description": "Bonjour ! Je m'appelle Pierre Bouillon, ingénieur logiciel et développeur full stack.",
+  "introduction": "Je transforme les idées en code, créant des applications à partir de zéro. J'aime également l'Open Source et écrire.",
+  "timeline_event-career_break-title": "Pause Professionnelle",
+  "timeline_event-career_break-description": "Mes études d'ingénieurs n'ayant pas pu inclure un semestre à l'étranger en raison de la pandémie de COVID-19, je suis parti par moi-même pendant plusieurs mois en Nouvelle-Zélande, Australie, Singapour et Corée du Sud.",
+  "timeline_event-lombard_odier-title": "Ingénieur logiciel",
+  "timeline_event-lombard_odier-subtitle": "Lombard Odier, Luxembourg",
+  "timeline_event-lombard_odier-description": "Création d'un système de gestion d'audit pour plus de 8000 composants internes de l'entreprise. Travail en étroite collaboration avec les équipes métiers concernées pour implémenter leurs besoins tout en faisant évoluer le produit.",
+  "timeline_event-docaposte-title": "Ingénieur logiciel",
+  "timeline_event-docaposte-subtitle": "Docaposte, Grand Est",
+  "timeline_event-docaposte-description": "Développement d'une plateforme web pour une grande région française, permettant aux employés publics et aux citoyens de gérer les accès aux services publics et d'administrer leurs cartes à puces.",
+  "experiences_title": "Parcours et expériences.",
+  "experiences_subtitle": "Parcours professionnel et expériences marquantes.",
+  "articles_title": "Blog et articles.",
+  "articles_subtitle": "Mes publications et articles récents.",
+  "articles_cta_go_to_source": "Lire sur DEV",
+  "articles_cta_load_more": "Charger d'autres articles",
+  "article_cta_see_more": "Lire la suite"
 }
