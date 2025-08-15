@@ -1,32 +1,25 @@
-/// <reference types="vitest" />
-
-import analog from '@analogjs/platform';
+import { paraglideVitePlugin } from '@inlang/paraglide-js';
+import tailwindcss from '@tailwindcss/vite';
+import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
-export default defineConfig(({ mode }) => ({
-  build: {
-    target: ['es2020'],
-  },
-  resolve: {
-    mainFields: ['module'],
-  },
+export default defineConfig({
   plugins: [
-    analog({
-      static: true,
-      vite: { experimental: { supportAnalogFormat: true } },
-      prerender: {
-        routes: ['/', '/about'],
-      },
+    tailwindcss(),
+    sveltekit(),
+    paraglideVitePlugin({
+      project: './project.inlang',
+      outdir: './src/lib/paraglide',
+      strategy: ['url', 'preferredLanguage'],
+      urlPatterns: [
+        {
+          pattern: '/:path(.*)?',
+          localized: [
+            ['fr', '/fr/:path(.*)?'],
+            ['en', '/:path(.*)?'],
+          ],
+        },
+      ],
     }),
   ],
-  test: {
-    globals: true,
-    environment: 'jsdom',
-    setupFiles: ['src/test-setup.ts'],
-    include: ['**/*.spec.ts'],
-    reporters: ['default'],
-  },
-  define: {
-    'import.meta.vitest': mode !== 'production',
-  },
-}));
+});
