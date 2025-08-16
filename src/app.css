@@ -3,71 +3,8 @@
 @import 'bootstrap-icons';
 
 @import 'tailwindcss';
-@plugin '@tailwindcss/typography';
 
-:root {
-  /* Core Colors */
-  --primary: hsl(210, 80%, 25%);
-  --secondary: hsl(210, 50%, 25%);
-  --accent: hsl(210, 100%, 70%);
-
-  /* Backgrounds */
-  --background: hsl(210, 40%, 90%);
-  --secondary-background: hsl(210, 80%, 30%);
-  --accent-background: hsl(210, 80%, 85%);
-
-  /* Text */
-  --foreground: hsl(210, 50%, 20%);
-  --secondary-foreground: hsl(210, 30%, 90%);
-  --accent-foreground: hsl(0, 0%, 0%);
-
-  /* Borders */
-  --border: hsl(210, 80%, 15%);
-
-  /* Shadows */
-  --box-shadow-x: 4px;
-  --box-shadow-y: 4px;
-
-  --shadow: var(--box-shadow-x) var(--box-shadow-y) 0px 0px var(--border);
-}
-
-.dark {
-  /* Core Colors */
-  --primary: hsl(210, 70%, 40%);
-  --secondary: hsl(210, 60%, 35%);
-  --accent: hsl(210, 90%, 60%);
-
-  /* Backgrounds */
-  --background: hsl(210, 30%, 10%);
-  --secondary-background: hsl(210, 60%, 20%);
-  --accent-background: hsl(210, 70%, 15%);
-
-  /* Text */
-  --foreground: hsl(210, 20%, 90%);
-  --secondary-foreground: hsl(210, 30%, 80%);
-  --accent-foreground: hsl(0, 0%, 100%);
-
-  /* Borders & Shadows */
-  --border: hsl(210, 30%, 80%);
-}
-
-@theme {
-  --color-primary: var(--primary);
-  --color-secondary: var(--secondary);
-  --color-accent: var(--accent);
-
-  --color-background: var(--background);
-  --color-secondary-background: var(--secondary-background);
-  --color-accent-background: var(--accent-background);
-
-  --color-foreground: var(--foreground);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-accent-foreground: var(--accent-foreground);
-
-  --color-border: var(--border);
-
-  --shadow-shadow: var(--shadow);
-}
+@import './styles/deep-blue.theme.css';
 
 html {
   background-color: var(--background);
