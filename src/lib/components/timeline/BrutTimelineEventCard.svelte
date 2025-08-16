@@ -22,7 +22,7 @@
   </p>
 
   <hgroup>
-    <h3 class="grow font-bold">{event.title}</h3>
+    <h3 class="mr-18 grow font-bold sm:mr-0">{event.title}</h3>
     <p class="grow text-sm empty:hidden">{event.subtitle}</p>
   </hgroup>
 
