@@ -10,7 +10,7 @@ const config = {
   kit: { adapter: adapter() },
   extensions: ['.svelte', '.svx'],
   compilerOptions: { runes: true },
-  trailingSlash: 'never',
+  trailingSlash: 'always',
 };
 
 export default config;
