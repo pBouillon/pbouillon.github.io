@@ -27,5 +27,19 @@
   "footer_links_linkedin": "Profil LinkedIn",
   "footer_links_dev": "Profil DEV.to",
   "footer_links_resume": "CV",
-  "footer_privacy": "Ce site utilise GoatCounter pour des statistiques respectueuses de la vie privée."
+  "footer_privacy": "Ce site utilise GoatCounter pour des statistiques respectueuses de la vie privée.",
+  "project_ng_book_name": "\"Modern Web Development with Angular\"",
+  "project_ng_book_description": "Mon premier livre publié, destiné aux développeurs souhaitant travailler avec le framework. Les sujets couverts vont de l'installation, aux tests, à la communication entre composants et aux notions de réactivité.",
+  "project_agile_teaching_name": "Introduction à l'agilité & Scrum",
+  "project_agile_teaching_description": "Je suis intervenu pendant trois ans en tant que professeur vacataire auprès d'apprentis ingénieurs logiciels pour initier aux méthodologies, outils et rôles de l'agilité.",
+  "projects_see_on": "Voir sur {source}",
+  "projects_types_teaching": "Enseignement",
+  "projects_types_writing": "Ecriture",
+  "projects_types_code": "Code",
+  "projects_title": "Projets et réalisations.",
+  "projects_subtitle": "Projets personnels, expériences pédagogiques et publications.",
+  "projects_mqtttopicbuilder_name": "MqttTopicBuilder",
+  "projects_mqtttopicbuilder_description": "Téléchargée plus de 45K fois, MqttTopicBuilder est une librairie permettant de structurer le nom des canaux de communications utilisants le protocol MQTT.",
+  "projects_locutionis_name": "Locutionis",
+  "projects_locutionis_description": "Locutionis est un petit glossaire de figures de style française expliquant leurs usages, buts et citant quelques exemples."
 }

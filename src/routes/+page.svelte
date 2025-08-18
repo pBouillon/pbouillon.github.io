@@ -2,7 +2,7 @@
   import { m } from '$lib/paraglide/messages';
   import BrutArticlesDeck from '../lib/components/articles/BrutArticlesDeck.svelte';
   import BrutAdaptiveButton from '../lib/components/BrutAdaptiveButton.svelte';
-  import BrutFooter from '../lib/components/BrutFooter.svelte';
+  import BrutProjectCardsDeck from '../lib/components/projects/BrutProjectCardsDeck.svelte';
   import BrutTimelineStep from '../lib/components/timeline/BrutTimelineStep.svelte';
 </script>
 
@@ -136,4 +136,18 @@
   <BrutArticlesDeck />
 </section>
 
-<BrutFooter />
+<section
+  class="flex flex-col items-center justify-center border-t-4 border-border bg-background px-5 py-18 text-foreground"
+>
+  <hgroup>
+    <h2 class="text-center text-2xl font-bold tracking-tight">
+      {m.projects_title()}
+    </h2>
+
+    <p class="mt-3 max-w-xl text-center leading-snug">
+      {m.projects_subtitle()}
+    </p>
+  </hgroup>
+
+  <BrutProjectCardsDeck />
+</section>

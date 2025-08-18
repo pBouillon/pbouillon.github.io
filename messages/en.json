@@ -27,5 +27,19 @@
   "footer_links_linkedin": "LinkedIn Profile",
   "footer_links_dev": "DEV.to Profile",
   "footer_links_resume": "Resume (French)",
-  "footer_privacy": "This site uses GoatCounter for privacy-friendly analytics."
+  "footer_privacy": "This site uses GoatCounter for privacy-friendly analytics.",
+  "project_ng_book_name": "\"Modern Web Development with Angular\"",
+  "project_ng_book_description": "My first published book for developpers who would like to get started with the framework. It covers topics from setup, to testing, component communication and reactivity.",
+  "project_agile_teaching_name": "Introduction to Agile & Scrum",
+  "project_agile_teaching_description": "Worked as a temporary teacher for three years to introduce software engineer apprentices to agile tools and roles.",
+  "projects_see_on": "See on {source}",
+  "projects_types_teaching": "Teaching",
+  "projects_types_writing": "Writing",
+  "projects_types_code": "Code",
+  "projects_title": "Projects and realizations.",
+  "projects_subtitle": "What've been building or working on.",
+  "projects_mqtttopicbuilder_name": "MqttTopicBuilder",
+  "projects_mqtttopicbuilder_description": "Downloaded over 45K times, MqttTopicBuilder is a library that helps developers structure communication channel names for the MQTT protocol.",
+  "projects_locutionis_name": "Locutionis",
+  "projects_locutionis_description": "Locutionis is a simple website on which french speakers can learn more about some figures of speech, their usages and where to find more about it."
 }
