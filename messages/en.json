@@ -21,5 +21,11 @@
   "articles_subtitle": "What I've been writing about.",
   "articles_cta_go_to_source": "See on DEV",
   "articles_cta_load_more": "Load more",
-  "article_cta_see_more": "Read more"
+  "article_cta_see_more": "Read more",
+  "footer_subtext": "Made with SvelteKit, love and coffee.",
+  "footer_links_github": "GitHub Profile",
+  "footer_links_linkedin": "LinkedIn Profile",
+  "footer_links_dev": "DEV.to Profile",
+  "footer_links_resume": "Resume (French)",
+  "footer_privacy": "This site uses GoatCounter for privacy-friendly analytics."
 }

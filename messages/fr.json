@@ -21,5 +21,11 @@
   "articles_subtitle": "Mes publications et articles récents.",
   "articles_cta_go_to_source": "Lire sur DEV",
   "articles_cta_load_more": "Charger d'autres articles",
-  "article_cta_see_more": "Lire la suite"
+  "article_cta_see_more": "Lire la suite",
+  "footer_subtext": "Fait avec SvelteKit, de l'amour et du café.",
+  "footer_links_github": "Profil GitHub",
+  "footer_links_linkedin": "Profil LinkedIn",
+  "footer_links_dev": "Profil DEV.to",
+  "footer_links_resume": "CV",
+  "footer_privacy": "Ce site utilise GoatCounter pour des statistiques respectueuses de la vie privée."
 }

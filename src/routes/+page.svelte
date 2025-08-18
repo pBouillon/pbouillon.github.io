@@ -2,6 +2,7 @@
   import { m } from '$lib/paraglide/messages';
   import BrutArticlesDeck from '../lib/components/articles/BrutArticlesDeck.svelte';
   import BrutAdaptiveButton from '../lib/components/BrutAdaptiveButton.svelte';
+  import BrutFooter from '../lib/components/BrutFooter.svelte';
   import BrutTimelineStep from '../lib/components/timeline/BrutTimelineStep.svelte';
 </script>
 
@@ -134,3 +135,5 @@
 
   <BrutArticlesDeck />
 </section>
+
+<BrutFooter />
