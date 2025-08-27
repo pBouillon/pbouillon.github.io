@@ -32,8 +32,8 @@
       description: m.projects_locutionis_description(),
       type: 'code',
       reference: {
-        source: 'GitHub',
-        url: 'https://github.com/pBouillon/locutionis',
+        source: 'internet',
+        url: 'https://pbouillon.github.io/locutionis?utm_source=pbouillon.github.io',
       },
     },
   ];
