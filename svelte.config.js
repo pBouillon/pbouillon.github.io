@@ -7,6 +7,18 @@ const config = {
   preprocess: [vitePreprocess(), mdsvex()],
   kit: {
     adapter: adapter(),
+    prerender: {
+      handleHttpError: ({ path, referrer, message }) => {
+        const isBasePathError =
+          path === '/' && message.includes('does not begin with `base`');
+
+        if (isBasePathError) {
+          return;
+        }
+
+        throw new Error(message);
+      },
+    },
   },
   extensions: ['.svelte', '.svx'],
   compilerOptions: { runes: true },
