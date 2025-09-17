@@ -6,6 +6,10 @@
   import BrutTimelineStep from '../lib/components/timeline/BrutTimelineStep.svelte';
 </script>
 
+<svelte:head>
+  <meta name="description" content={m.page_description()} />
+</svelte:head>
+
 <main
   class="flex min-h-dvh flex-col items-center justify-center bg-accent-background px-5 pt-18"
 >
@@ -85,6 +89,16 @@
   </hgroup>
 
   <div class="mt-12 w-full max-w-2xl">
+    <BrutTimelineStep
+      event={{
+        title: m['timeline_event-eid-title'](),
+        subtitle: m['timeline_event-eid-subtitle'](),
+        startDate: '2025',
+        isWorkRelated: true,
+        description: m['timeline_event-eid-description'](),
+      }}
+    />
+
     <BrutTimelineStep
       event={{
         title: m['timeline_event-career_break-title'](),
