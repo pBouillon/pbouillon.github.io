@@ -8,16 +8,7 @@ const config = {
   kit: {
     adapter: adapter(),
     prerender: {
-      handleHttpError: ({ path, referrer, message }) => {
-        const isBasePathError =
-          path === '/' && message.includes('does not begin with `base`');
-
-        if (isBasePathError) {
-          return;
-        }
-
-        throw new Error(message);
-      },
+      handleHttpError: 'ignore',
     },
   },
   extensions: ['.svelte', '.svx'],
