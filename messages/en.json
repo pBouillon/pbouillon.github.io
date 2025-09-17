@@ -15,6 +15,9 @@
   "timeline_event-docaposte-title": "Software Engineer",
   "timeline_event-docaposte-subtitle": "Docaposte, Grand Est",
   "timeline_event-docaposte-description": "Developed a comprehensive web application for a French region, enabling public employees and citizens to manage accesses to public services and administrate their smart cards.",
+  "timeline_event-eid-title": "Software Engineer",
+  "timeline_event-eid-subtitle": "Euro-Information, Grand Est",
+  "timeline_event-eid-description": "(Further details available soon)",
   "experiences_title": "Experiences and history.",
   "experiences_subtitle": "Past roles and life experiences.",
   "articles_title": "Blog and articles.",
@@ -41,5 +44,6 @@
   "projects_mqtttopicbuilder_name": "MqttTopicBuilder",
   "projects_mqtttopicbuilder_description": "Downloaded over 45K times, MqttTopicBuilder is a library that helps developers structure communication channel names for the MQTT protocol.",
   "projects_locutionis_name": "Locutionis",
-  "projects_locutionis_description": "Locutionis is a simple website on which french speakers can learn more about some figures of speech, their usages and where to find more about it."
+  "projects_locutionis_description": "Locutionis is a simple website on which french speakers can learn more about some figures of speech, their usages and where to find more about it.",
+  "timeline_date_since": "Since {date}"
 }

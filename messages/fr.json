@@ -41,5 +41,10 @@
   "projects_mqtttopicbuilder_name": "MqttTopicBuilder",
   "projects_mqtttopicbuilder_description": "Téléchargée plus de 45K fois, MqttTopicBuilder est une librairie permettant de structurer le nom des canaux de communications utilisants le protocol MQTT.",
   "projects_locutionis_name": "Locutionis",
-  "projects_locutionis_description": "Locutionis est un petit glossaire de figures de style française expliquant leurs usages, buts et citant quelques exemples."
+  "projects_locutionis_description": "Locutionis est un petit glossaire de figures de style française expliquant leurs usages, buts et citant quelques exemples.",
+  "timeline_date_present": "Aujourd'hui",
+  "timeline_date_since": "Depuis {date}",
+  "timeline_event-eid-title": "Software Engineer",
+  "timeline_event-eid-subtitle": "Euro-Information, Grand Est",
+  "timeline_event-eid-description": "(Détails disponibles prochainement)"
 }

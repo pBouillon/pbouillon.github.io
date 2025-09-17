@@ -1,11 +1,10 @@
 <script lang="ts">
-  let {
-    event,
-    isLast = false,
-  }: {
+  import { m } from '$lib/paraglide/messages';
+
+  const { event, isLast = false } = $props<{
     event: TimelineEvent;
     isLast: boolean;
-  } = $props();
+  }>();
 </script>
 
 <article
@@ -16,9 +15,15 @@
   <p
     class="absolute top-0 right-0 inline-flex w-fit translate-x-3 -translate-y-3 rotate-10 items-center justify-center gap-1 rounded-bl border-3 border-border bg-secondary-background p-2 text-sm text-secondary-foreground shadow-shadow"
   >
-    <time datetime={event.startDate}>{event.startDate}</time>
-    <span>-</span>
-    <time datetime={event.endDate}>{event.endDate}</time>
+    {#if !event.endDate}
+      <time datetime={event.startDate}
+        >{m.timeline_date_since({ date: event.startDate })}</time
+      >
+    {:else}
+      <time datetime={event.startDate}>{event.startDate}</time>
+      <span>-</span>
+      <time datetime={event.endDate}>{event.endDate}</time>
+    {/if}
   </p>
 
   <hgroup>
