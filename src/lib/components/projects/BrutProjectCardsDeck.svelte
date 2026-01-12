@@ -23,8 +23,8 @@
       description: m.projects_mqtttopicbuilder_description(),
       type: 'code',
       reference: {
-        source: 'NuGet',
-        url: 'https://www.nuget.org/packages/MqttTopicBuilder',
+        source: 'GitHub',
+        url: 'https://github.com/pBouillon/MqttTopicBuilder',
       },
     },
     {
