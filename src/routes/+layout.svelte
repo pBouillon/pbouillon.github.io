@@ -7,10 +7,23 @@
   import '../app.css';
 
   let { children } = $props();
+  const seoDescription = `${m.page_description()} ${m.introduction()}`;
 </script>
 
 <svelte:head>
   <title>{m.page_title()}</title>
+  <meta name="description" content={seoDescription} />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://pbouillon.github.io/" />
+  <meta property="og:title" content={m.page_title()} />
+  <meta property="og:description" content={m.page_description()} />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta property="twitter:domain" content="pbouillon.github.io" />
+  <meta property="twitter:url" content="https://pbouillon.github.io/" />
+  <meta name="twitter:title" content={m.page_title()} />
+  <meta name="twitter:description" content={m.page_description()} />
 </svelte:head>
 
 <BrutNav />
