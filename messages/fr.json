@@ -1,6 +1,6 @@
 {
   "$schema": "https://inlang.com/schema/inlang-message-format",
-  "welcome_message": "Bonjour, je m'appelle Pierre!",
+  "welcome_message": "Bonjour, je m'appelle Pierre !",
   "introduction_subtext": "Aussi amateur de randonnées et de roller.",
   "switch_language": "English",
   "switch_language_long": "English Version",
@@ -46,5 +46,5 @@
   "timeline_date_since": "Depuis {date}",
   "timeline_event-eid-title": "Software Engineer",
   "timeline_event-eid-subtitle": "Euro-Information, Grand Est",
-  "timeline_event-eid-description": "(Détails disponibles prochainement)"
+  "timeline_event-eid-description": "Développement de briques logicielles frontend et backend communes au domaine d'activité, portant sur la sécurité, l'outillage et la normalisation des pratiques."
 }
