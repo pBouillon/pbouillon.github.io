@@ -17,9 +17,9 @@
     }).format(date);
 </script>
 
-<a href={article.url}>
+<a href={article.url} rel="external">
   <article
-    class="group relative rounded border-3 border-border bg-background shadow-shadow transition-all hover:translate-0.5 hover:opacity-90 hover:shadow-none md:h-52"
+    class="group relative flex flex-col rounded border-3 border-border bg-background shadow-shadow transition-all hover:translate-0.5 hover:opacity-90 hover:shadow-none md:h-64"
   >
     <header
       class="relative border-b-3 border-border bg-secondary-background p-5 text-secondary-foreground md:h-24"
@@ -31,17 +31,20 @@
       <span class="text-xs">{toShortDate(article.published_at)}</span>
 
       <div
-        class="absolute -bottom-3 left-4 h-0 w-0
-              border-t-[12px] border-r-[12px]
-              border-l-[12px] border-border
-              border-r-transparent border-l-transparent"
+        class="absolute -bottom-3 left-4 h-0 w-0 border-t-12 border-r-12 border-l-12 border-border border-r-transparent border-l-transparent"
       ></div>
     </header>
 
-    <div class="space-y-3 px-5 pt-6 pb-4 text-sm">
-      <p class=" leading-relaxed">
+    <div class="flex flex-col gap-4 grow justify-between px-5 pt-6 pb-4 text-sm">
+      <p class="leading-relaxed">
         {article.description}
       </p>
+
+      <div class="flex gap-2">
+        {#each article.tag_list as tag (tag)}
+          <span class="text-xs bg-background text-foreground px-2 border-2 py-1">{tag}</span>
+        {/each}
+      </div>
     </div>
 
     <div

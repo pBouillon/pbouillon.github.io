@@ -34,7 +34,7 @@
 
 <!-- https://inlang.com/m/gerre34r/library-inlang-paraglideJs/sveltekit#static-site-generation-ssg -->
 <div class="hidden">
-  {#each locales as locale}
+  {#each locales as locale (locale)}
     <a href={localizeHref(page.url.pathname, { locale })}>{locale}</a>
   {/each}
 </div>
