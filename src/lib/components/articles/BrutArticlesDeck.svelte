@@ -34,13 +34,15 @@
             return;
           }
 
-          const fetchedArticles = data.filter(isArticle).map((item: Article): Article => ({
-            url: item.url,
-            title: item.title,
-            description: item.description,
-            published_at: new Date(item.published_at),
-            tag_list: item.tag_list.toSorted((a,b) => a.localeCompare(b)),
-          }));
+          const fetchedArticles = data
+            .filter(isArticle)
+            .map((item: Article): Article => ({
+              url: item.url,
+              title: item.title,
+              description: item.description,
+              published_at: new Date(item.published_at),
+              tag_list: item.tag_list.toSorted((a, b) => a.localeCompare(b)),
+            }));
 
           articles = [...articles, ...fetchedArticles];
           status = 'settled';

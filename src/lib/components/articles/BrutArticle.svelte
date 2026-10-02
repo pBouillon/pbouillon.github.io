@@ -35,14 +35,18 @@
       ></div>
     </header>
 
-    <div class="flex flex-col gap-4 grow justify-between px-5 pt-6 pb-4 text-sm">
+    <div
+      class="flex grow flex-col justify-between gap-4 px-5 pt-6 pb-4 text-sm"
+    >
       <p class="leading-relaxed">
         {article.description}
       </p>
 
       <div class="flex gap-2">
         {#each article.tag_list as tag (tag)}
-          <span class="text-xs bg-background text-foreground px-2 border-2 py-1">{tag}</span>
+          <span class="border-2 bg-background px-2 py-1 text-xs text-foreground"
+            >{tag}</span
+          >
         {/each}
       </div>
     </div>
