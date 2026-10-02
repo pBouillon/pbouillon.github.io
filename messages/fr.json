@@ -44,7 +44,7 @@
   "projects_locutionis_description": "Locutionis est un petit glossaire de figures de style française expliquant leurs usages, buts et citant quelques exemples.",
   "timeline_date_present": "Aujourd'hui",
   "timeline_date_since": "Depuis {date}",
-  "timeline_event-eid-title": "Software Engineer",
-  "timeline_event-eid-subtitle": "Euro-Information, Grand Est",
-  "timeline_event-eid-description": "Développement de briques logicielles frontend et backend communes au domaine d'activité, portant sur la sécurité, l'outillage et la normalisation des pratiques."
+  "timeline_event-eid-title": "Ingénieur Logiciel",
+  "timeline_event-eid-subtitle": "Euro Information Développements, Grand Est",
+  "timeline_event-eid-description": "Développement de composants frontend et backend dans le cadre de la solution de paiement européenne WERO et d'outillage interne."
 }
