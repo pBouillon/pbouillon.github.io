@@ -1,3 +1,6 @@
+import adapter from '@sveltejs/adapter-static';
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
+import { mdsvex } from 'mdsvex';
 import { paraglideVitePlugin } from '@inlang/paraglide-js';
 import tailwindcss from '@tailwindcss/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
@@ -5,8 +8,6 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
   plugins: [
-    tailwindcss(),
-    sveltekit(),
     paraglideVitePlugin({
       project: './project.inlang',
       outdir: './src/lib/paraglide',
@@ -21,5 +22,13 @@ export default defineConfig({
         },
       ],
     }),
+    sveltekit({
+      preprocess: [vitePreprocess(), mdsvex()],
+      extensions: ['.svelte', '.svx'],
+      compilerOptions: { runes: true },
+      adapter: adapter(),
+      prerender: { handleHttpError: 'ignore' },
+    }),
+    tailwindcss(),
   ],
 });

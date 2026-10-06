@@ -1,6 +1,6 @@
 <script lang="ts">
-  import { m } from '$lib/paraglide/messages';
-  import { getLocale } from '$lib/paraglide/runtime';
+  import { m } from '#lib/paraglide/messages.js';
+  import { getLocale } from '#lib/paraglide/runtime.js';
   import type { Article } from './article';
 
   let { article }: { article: Article } = $props();

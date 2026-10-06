@@ -1,9 +1,9 @@
 <script lang="ts">
   import { page } from '$app/state';
-  import BrutFooter from '$lib/components/BrutFooter.svelte';
-  import BrutNav from '$lib/components/BrutNav.svelte';
-  import { m } from '$lib/paraglide/messages';
-  import { locales, localizeHref } from '$lib/paraglide/runtime';
+  import BrutFooter from '#lib/components/BrutFooter.svelte';
+  import BrutNav from '#lib/components/BrutNav.svelte';
+  import { m } from '#lib/paraglide/messages.js';
+  import { locales, localizeHref } from '#lib/paraglide/runtime.js';
   import '../app.css';
 
   let { children } = $props();

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { m } from '$lib/paraglide/messages';
+  import { m } from '#lib/paraglide/messages.js';
   import { untrack } from 'svelte';
   import BrutAdaptiveButton from '../BrutAdaptiveButton.svelte';
   import { type Article, isArticle } from './article';

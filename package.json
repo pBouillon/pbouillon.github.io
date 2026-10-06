@@ -16,8 +16,9 @@
   "devDependencies": {
     "@eslint/compat": "^2.1.1",
     "@eslint/js": "^10.0.1",
-    "@sveltejs/adapter-static": "^3.0.10",
-    "@sveltejs/kit": "^2.70.3",
+    "@sveltejs/adapter-static": "^4.0.0",
+    "@sveltejs/kit": "^3.0.0",
+    "@sveltejs/load-config": "^0.2.2",
     "@sveltejs/vite-plugin-svelte": "^7.3.1",
     "@tailwindcss/vite": "^4.3.3",
     "eslint": "^10.11.0",
@@ -38,5 +39,9 @@
   "dependencies": {
     "@inlang/paraglide-js": "^2.25.4",
     "bootstrap-icons": "^1.13.1"
+  },
+  "imports": {
+    "#lib": "./src/lib/index.js",
+    "#lib/*": "./src/lib/*"
   }
 }

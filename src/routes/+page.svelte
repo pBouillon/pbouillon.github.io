@@ -1,5 +1,5 @@
 <script>
-  import { m } from '$lib/paraglide/messages';
+  import { m } from '#lib/paraglide/messages.js';
   import BrutArticlesDeck from '../lib/components/articles/BrutArticlesDeck.svelte';
   import BrutAdaptiveButton from '../lib/components/BrutAdaptiveButton.svelte';
   import BrutProjectCardsDeck from '../lib/components/projects/BrutProjectCardsDeck.svelte';
